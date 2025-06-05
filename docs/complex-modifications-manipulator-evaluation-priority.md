@@ -24,11 +24,11 @@ About input event modification chaining.
 
 If there are the following manipulators,right shiftkey will beright command + right option.
 
-`right shift`right command + right option`- Simple ModificationsChangeright shifttoright command
+` right shift ` right command + right option `- Simple ModificationsChangeright shifttoright command
 - Complex ModificationsChangeright commandtoright command + right option
 
 - Changeright shifttoright command
 
-`right shift`right command`- Changeright commandtoright command + right option
+` right shift ` right command `- Changeright commandtoright command + right option
 
-`right command`right command + right option`
+` right command ` right command + right option `

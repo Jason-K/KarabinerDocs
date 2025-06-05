@@ -33,7 +33,7 @@ Therefore, regular applications running with user privileges cannot arbitrarily 
 - This process only receives data from processes running with root privileges.
 Therefore, regular applications running with user privileges cannot arbitrarily send events to virtual devices.
 
-`karabiner_grabber`Running with DriverKit privilege
+` karabiner_grabber ` Running with DriverKit privilege
 
 - Karabiner-DriverKit-VirtualHIDDeviceThe virtual keyboard and pointing device using DriverKit.Karabiner-DriverKit-VirtualHIDDevice does not accept control from any processes other than Karabiner-VirtualHIDDevice-Daemon.
 Other apps cannot arbitrarily add/remove virtual devices or send events.

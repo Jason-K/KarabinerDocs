@@ -31,7 +31,7 @@ If you are facing the problem, restart macOS between deactivating and activating
 1. PressActivate driverbutton.
 1. Open Security & Privacy System Preferences and press the allow button.
 
-`Deactivate driver`Activate driver`
+` Deactivate driver ` Activate driver `
 #### macOS Catalina Note #2
 
 The problem is caused by macOS Catalina issues around DriverKit driver.

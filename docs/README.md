@@ -25,15 +25,13 @@ This documentation covers the JSON configuration format used by Karabiner-Elemen
 ## Quick Start
 
 The main configuration file is located at:
-`
 ~/.config/karabiner/karabiner.json
-`
 
 ## Example Configuration
 
 Here's a simple example that remaps Caps Lock to Escape:
 
-`json
+` json
 {
   "type": "basic",
   "from": {
@@ -45,7 +43,6 @@ Here's a simple example that remaps Caps Lock to Escape:
     }
   ]
 }
-`
 
 ## Official Resources
 

@@ -17,16 +17,16 @@ Move the mouse cursor to the specified point.
 
 Set the mouse cursor position to center of the first screen by right_shift+c.
 
-`
+
+` json
 {"description":"Set the mouse cursor position to center of the first screen by right_shift+c","manipulators":[{"type":"basic","from":{"key_code":"c","modifiers":{"mandatory":["right_shift"],"optional":["caps_lock"]}},"to":[{"software_function":{"set_mouse_cursor_position":{"x":"50%","y":"50%","screen":0}}}]}]}
-`
 
 `{"description":"Set the mouse cursor position to center of the first screen by right_shift+c","manipulators":[{"type":"basic","from":{"key_code":"c","modifiers":{"mandatory":["right_shift"],"optional":["caps_lock"]}},"to":[{"software_function":{"set_mouse_cursor_position":{"x":"50%","y":"50%","screen":0}}}]}]}`
 ## Specification
 
-`
+
+` json
 {"to":[{"software_function":{"set_mouse_cursor_position":{"x":0,"y":0,"screen":0}}}]}
-`
 
 `{"to":[{"software_function":{"set_mouse_cursor_position":{"x":0,"y":0,"screen":0}}}]}`
 
@@ -35,7 +35,7 @@ Set the mouse cursor position to center of the first screen by right_shift+c.
 | y | Required | The new mouse cursor position |
 | screen | Optional | The screen index of the new mouse cursor origin |
 
-`x`y`screen`
+` x ` y ` screen `
 ### Position format
 
 There are two styles to specify the position.

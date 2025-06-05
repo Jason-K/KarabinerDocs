@@ -11,13 +11,13 @@ Source: https://karabiner-elements.pqrs.org/docs/help/troubleshooting/preference
 
 If you manually registered Karabiner-Elements toOpen at Login, the settings window will always appear at startup.
 
-`Open at Login`Karabiner-Elements will start automatically via launchd even if it is not inOpen at Login, so remove it from yourOpen at Login.
+` Open at Login ` Karabiner-Elements will start automatically via launchd even if it is not inOpen at Login, so remove it from yourOpen at Login.
 
-`Open at Login`Open at Login`1. Open System Settings.
+` Open at Login ` Open at Login `1. Open System Settings.
 1. Open General > Login Items.
 1. Remove Karabiner-Elements fromOpen at Login.
 
-`Open at Login`
+` Open at Login `
 #### Caution
 
-`Allow in the Background`
+` Allow in the Background `

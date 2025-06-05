@@ -21,10 +21,10 @@ Source: https://karabiner-elements.pqrs.org/docs/releasenotes/#karabiner-element
 
 - Added the following variables forvariable_if,variable_unless:system.scroll_direction_is_naturalsystem.use_fkeys_as_standard_function_keys
 
-`variable_if`variable_unless`- system.scroll_direction_is_natural
+` variable_if ` variable_unless `- system.scroll_direction_is_natural
 - system.use_fkeys_as_standard_function_keys
 
-`system.scroll_direction_is_natural`system.use_fkeys_as_standard_function_keys`- The key names in the Function Keys settings became clearer when “Use all F1, F2, etc. keys as standard function keys” is enabled.
+` system.scroll_direction_is_natural ` system.use_fkeys_as_standard_function_keys `- The key names in the Function Keys settings became clearer when “Use all F1, F2, etc. keys as standard function keys” is enabled.
 
 Details of Breaking Changes in v15.1.0
 
@@ -61,10 +61,10 @@ For example, fn+up arrow used to be automatically changed to page up, but it wil
 - To improve the behavior around the fn key, the Vendor ID and Product ID of the virtual keyboard used by Karabiner-Elements have been changed to the same values as those of a real Apple external keyboard.
 - There were two JSON files that output information about connected devices, but this information has now been consolidated intokarabiner_grabber_devices.json.karabiner_grabber_device_details.jsonis no longer used. Please usekarabiner_grabber_devices.jsonfrom now on.karabiner_grabber_devices.jsonkarabiner_grabber_device_details.json(obsoleted)
 
-`karabiner_grabber_devices.json`karabiner_grabber_device_details.json`karabiner_grabber_devices.json`- karabiner_grabber_devices.json
+` karabiner_grabber_devices.json ` karabiner_grabber_device_details.json ` karabiner_grabber_devices.json `- karabiner_grabber_devices.json
 - karabiner_grabber_device_details.json(obsoleted)
 
-`karabiner_grabber_devices.json`karabiner_grabber_device_details.json`- Addedopen_applicationto complex modifications.
+` karabiner_grabber_devices.json ` karabiner_grabber_device_details.json `- Addedopen_applicationto complex modifications.
 - A setting has been added to disable mouse cursor movement and scrolling for both the mouse and gamepad.
 - Settings of the gamepad stick have been added; deadzone and delta magnitude detection threshold.
 - Added an option to allow quitting EventViewer with Command+Q and Command+W.
@@ -102,13 +102,13 @@ To enable the Multitouch Extension, go to the Misc tab in the settings and turn 
 - Open Karabiner-Elements Settings.
 - Follow the instructions to allow Karabiner-Elements Privileged Daemons to run in the System Settings.
 
-`Enable Multitouch Extension`- A unique random ID calledkarabiner_machine_identifieris now generated during installation.
+` Enable Multitouch Extension `- A unique random ID calledkarabiner_machine_identifieris now generated during installation.
 This ID is used for machine-specific settings and may be included in the karabiner.json file.
 If you are sharing karabiner.json with others, you might be interested in how this ID is generated and whether it is safe to share.
 Since it is a safe ID to share with others, and there is no need to mask it when you share karabiner.json with others.
 For more details, please refer to thePrivacypage.
 
-`karabiner_machine_identifier`- Added the ability to disable Complex Modifications rules.
+` karabiner_machine_identifier `- Added the ability to disable Complex Modifications rules.
 - Added the ability to duplicate and reorder profiles.
 - Added the ability to restart Karabiner-Elements from the menu.
 - Added the ability to reset device settings that are not currently connected.
@@ -125,7 +125,7 @@ The number of background processes has been reduced, resolving performance issue
 - The process for saving the configuration file has been optimized so that settings that have not been changed from their default values are not included in karabiner.json.
 - Internal changes:Improved the interface of libkrbn to minimize the use of unsafe pointers in Swift.
 
-`al_consumer_control_configuration`to_if_alone`{"type": "unset"}`set_variable`karabiner_observer`karabiner_grabber`karabiner_observer`- Improved the interface of libkrbn to minimize the use of unsafe pointers in Swift.
+` al_consumer_control_configuration ` to_if_alone `{"type": "unset"}` set_variable ` karabiner_observer ` karabiner_grabber ` karabiner_observer `- Improved the interface of libkrbn to minimize the use of unsafe pointers in Swift.
 
 ## Karabiner-Elements 14.13.0
 
@@ -156,15 +156,15 @@ The number of background processes has been reduced, resolving performance issue
 - Swap mouse X and Y
 - Swap mouse wheels
 
-`Flip mouse X`Flip mouse Y`Flip mouse vertical wheel`Flip mouse horizontal wheel`Swap mouse X and Y`Swap mouse wheels`karabiner_cli`- --format-json
+` Flip mouse X ` Flip mouse Y ` Flip mouse vertical wheel ` Flip mouse horizontal wheel ` Swap mouse X and Y ` Swap mouse wheels ` karabiner_cli `- --format-json
 - --eval-js
 - --silent
 
-`--format-json`--eval-js`--silent`- Thedevice_addresscondition has been added intodevice_ifanddevice_unless. (Thanks to @stackia)
+`--format-json `--eval-js `--silent `- Thedevice_addresscondition has been added intodevice_ifanddevice_unless. (Thanks to @stackia)
 - Addedkey_up_valuetoset_variable.
 - Addedmouse_basicmanipulator.
 
-`device_address`device_if`device_unless`key_up_value`set_variable`mouse_basic`- Added the ability to filter by keywords when adding Complex Modifications rules.
+` device_address ` device_if ` device_unless ` key_up_value ` set_variable ` mouse_basic `- Added the ability to filter by keywords when adding Complex Modifications rules.
 - Adjusted the position of the Add rule button in Complex Modifications. (Thanks to @GanZhiXiong)
 - MultitouchExtension has been rewritten in Swift.
 
@@ -209,9 +209,9 @@ The number of background processes has been reduced, resolving performance issue
 
 - Changed bundle identifier of Karabiner-Elements Settings toorg.pqrs.Karabiner-Elements.Settingsfromorg.pqrs.Karabiner-Elements.Preferences.
 
-`org.pqrs.Karabiner-Elements.Settings`org.pqrs.Karabiner-Elements.Preferences`- AddedAsk for confirmation when quittingoption into Settings > Misc tab. (Thanks to @basti1302)
+` org.pqrs.Karabiner-Elements.Settings ` org.pqrs.Karabiner-Elements.Preferences `- AddedAsk for confirmation when quittingoption into Settings > Misc tab. (Thanks to @basti1302)
 
-`Ask for confirmation when quitting`- Improved health checks for inter-process communication to better recover from errors.
+` Ask for confirmation when quitting `- Improved health checks for inter-process communication to better recover from errors.
 
 - Fixed an issue that uninstaller does not remove Karabiner-Elements.app and Karabiner-EventViewer.app in macOS Ventura.
 - Fixed an issue that could cause multiple update windows will be shown.
@@ -228,9 +228,9 @@ The number of background processes has been reduced, resolving performance issue
 - Updateset_mouse_cursor_positionto use the current screen ifscreenoption is not specified. (Thanks to @gnawf)
 - Sparkle Framework has been updated.
 
-`set_mouse_cursor_position`screen`- Fixed an issue that thedevice_ifanddevice_unlessdoes not work if vendor_id or product_id is zero. (or more precisely, if vendor_id or product_id cannot be retrieved and is set to 0)
+` set_mouse_cursor_position ` screen `- Fixed an issue that thedevice_ifanddevice_unlessdoes not work if vendor_id or product_id is zero. (or more precisely, if vendor_id or product_id cannot be retrieved and is set to 0)
 
-`device_if`device_unless`
+` device_if ` device_unless `
 ## Karabiner-Elements 14.9.0
 
 - 📦 Download
@@ -244,7 +244,7 @@ The number of background processes has been reduced, resolving performance issue
 - Theis_built_in_keyboardhas been added intodevice_ifanddevice_unless.
 - Thedevice_exists_ifanddevice_exists_unlesshas been added intoconditions.
 
-`is_built_in_keyboard`device_if`device_unless`device_exists_if`device_exists_unless`conditions`- Fixed an issue that the ignored device’s modifier keys are not ignored properly.
+` is_built_in_keyboard ` device_if ` device_unless ` device_exists_if ` device_exists_unless ` conditions `- Fixed an issue that the ignored device’s modifier keys are not ignored properly.
 
 ## Karabiner-Elements 14.8.0
 
@@ -257,7 +257,7 @@ The number of background processes has been reduced, resolving performance issue
 
 - AddEnable unsafe configurationfeature into Preferences > Pro tab.
 
-`Enable unsafe configuration`- Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air.
+` Enable unsafe configuration `- Fixed an issue that the built-in keyboard is not be treated as the built-in keyboard if the keyboard is connected via SPI (Serial Peripheral Interface), such as M2 MacBook Air.
 
 ## Karabiner-Elements 14.6.0
 
@@ -270,7 +270,7 @@ The number of background processes has been reduced, resolving performance issue
 
 - Treat as a built-in keyboardsetting has been added into Devices configuration. It works with “Disable the built-in keyboard” feature.
 
-`Treat as a built-in keyboard`- Fixed an issue that “Disable the built-in keyboard” feature does not work if the built-in keyboard is not included in the event modification target devices.
+` Treat as a built-in keyboard `- Fixed an issue that “Disable the built-in keyboard” feature does not work if the built-in keyboard is not included in the event modification target devices.
 
 ## Karabiner-Elements 14.5.0
 
@@ -288,12 +288,12 @@ The number of background processes has been reduced, resolving performance issue
 - to_if_held_down
 - to_delayed_action
 
-`sticky modifiers`to_if_alone`to_if_held_down`to_delayed_action`- Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw)
+` sticky modifiers ` to_if_alone ` to_if_held_down ` to_delayed_action `- Improved behavior the sticky modifiers when used together with the built-in trackpad. (Thanks to @quarkw)
 - Preferences Window is rewritten in SwiftUI.
 - set_variablenow supports bool and string value.
 - Sparkle Framework has been updated.
 
-`set_variable`
+` set_variable `
 ## Karabiner-Elements 14.4.0
 
 - 📦 Download
@@ -334,7 +334,7 @@ The number of background processes has been reduced, resolving performance issue
 
 - Addedsoftware_function.iokit_power_management_sleep_system.
 
-`software_function.iokit_power_management_sleep_system`- Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey.
+` software_function.iokit_power_management_sleep_system `- Fixed an issue that an alert window appears in an incorrect position on macOS 12 Monterey.
 
 - Update application icons. (Thanks to Kouji TAMURA)
 - EventViewer is rewritten in SwiftUI.
@@ -349,7 +349,7 @@ The number of background processes has been reduced, resolving performance issue
 
 - Fix an issue thatshell_commanddoes not set environment variables (HOME, USER, etc.).
 
-`shell_command`
+` shell_command `
 ## Karabiner-Elements 13.6.0
 
 - 📦 Download
@@ -366,7 +366,7 @@ The number of background processes has been reduced, resolving performance issue
 - Addedsoftware_function.set_mouse_cursor_position.
 - Addedset_notification_message.
 
-`software_function.cg_event_double_click`software_function.set_mouse_cursor_position`set_notification_message`- Fixed an issue that karabiner.json parse error message is not shown in Preferences > Log if the error message contains corrupted characters.
+` software_function.cg_event_double_click ` software_function.set_mouse_cursor_position ` set_notification_message `- Fixed an issue that karabiner.json parse error message is not shown in Preferences > Log if the error message contains corrupted characters.
 
 - Changed to log the output of shell_command into console_user_server.log.
 - The notification window transparency will be increased when the mouse cursor is hovered.
@@ -384,7 +384,7 @@ The number of background processes has been reduced, resolving performance issue
 - The caps lock LED manipulation has been enabled by default.Note: This change applies to newly connected keyboards.
 - Several Objective-C code around GUI has been rewritten in Swift + SwiftUI.
 
-`mouse_key.speed_multiplier`to.modifiers`- Note: This change applies to newly connected keyboards.
+` mouse_key.speed_multiplier ` to.modifiers `- Note: This change applies to newly connected keyboards.
 
 ## Karabiner-Elements 13.4.0
 
@@ -397,7 +397,7 @@ The number of background processes has been reduced, resolving performance issue
 
 - Fixed an issue that Karabiner-Elements stops working withvirtual_hid_keyboard is not ready. Please wait for a while.error message when you killkarabiner_console_user_serverprocess manually.
 
-`virtual_hid_keyboard is not ready. Please wait for a while.`karabiner_console_user_server`- Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.
+` virtual_hid_keyboard is not ready. Please wait for a while.` karabiner_console_user_server `- Changed to terminate virtual HID devices immediately after quit Karabiner-Elements.
 
 ### 🔔 Notes for Mac computers with Apple Silicon (Apple M1) users
 
@@ -426,12 +426,12 @@ The state of caps lock will be changed immediately after you press the caps lock
 - The caps lock delay of Karabiner Virtual HID Keyboard has been removed.
 The state of caps lock will be changed immediately after you press the caps lock key.
 
-`spotlight`dictation`f6`- Note: This change will be applied when you create a new profile.
+` spotlight ` dictation ` f6`- Note: This change will be applied when you create a new profile.
 
 - Supportedsticky modifier keys
 - Addedapple_vendor_keyboard_key_codeandapple_vendor_top_case_key_codeto event definitions.apple_vendor_keyboard_key_codeapple_vendor_top_case_key_code
 
-`sticky modifier keys`apple_vendor_keyboard_key_code`apple_vendor_top_case_key_code`- apple_vendor_keyboard_key_code
+` sticky modifier keys ` apple_vendor_keyboard_key_code ` apple_vendor_top_case_key_code `- apple_vendor_keyboard_key_code
 - apple_vendor_top_case_key_code
 
 - Updated in-app screenshots to Big Sur.
@@ -483,7 +483,7 @@ The state of caps lock will be changed immediately after you press the caps lock
 
 - event_changed_ifandevent_changed_unlesshas been added toconditions.
 
-`event_changed_if`event_changed_unless`conditions`- Improved sending f1-f12 keys in complex modification (e.g., “change command+e to f2”) by ignoring media key mappings for these keys.
+` event_changed_if ` event_changed_unless ` conditions `- Improved sending f1-f12 keys in complex modification (e.g., “change command+e to f2”) by ignoring media key mappings for these keys.
 - Improved caps lock LED handling.
 - Improved uninstaller adding the kernel extension staging area clean up.
 - Improved complex modifications json checker.
@@ -506,14 +506,14 @@ which is caused by some devices that sends abnormal input events.
 
 - Open config folderbutton has been added into Preferences.The feature providesan easy way exporting configuration.
 
-`Open config folder`- Added a workaround for non-dismissibleDevice is ignored temporarilyalert
+` Open config folder `- Added a workaround for non-dismissibleDevice is ignored temporarilyalert
 which is caused by some devices that sends abnormal input events.
 
-`Device is ignored temporarily`- FixedAdd {key_code} to Karabiner-Elementsbutton on EventViewer for unnamed keys (raw number key codes).
+` Device is ignored temporarily `- FixedAdd {key_code} to Karabiner-Elementsbutton on EventViewer for unnamed keys (raw number key codes).
 - Fixed an issue that modifier flag events are not dispatched when changing pointing button while other character keys are pressed.
 (e.g., when changing pointing_button::button3 -> command+pointing_button::button1, command modifier is not sent when button1 is pressed whiletkey is also pressed.)
 
-`Add {key_code} to Karabiner-Elements`t`
+` Add {key_code} to Karabiner-Elements ` t `
 ## Karabiner-Elements 12.8.0
 
 - 📦 Download
@@ -526,11 +526,11 @@ which is caused by some devices that sends abnormal input events.
 - Add--show-current-profile-nameoption intokarabiner_cli.
 - Add--list-profile-namesoption intokarabiner_cli.
 
-`--show-current-profile-name`karabiner_cli`--list-profile-names`karabiner_cli`- Fixed an issue that Karabiner-Elements stops working after switching user on macOS Catalina.
+`--show-current-profile-name ` karabiner_cli `--list-profile-names ` karabiner_cli `- Fixed an issue that Karabiner-Elements stops working after switching user on macOS Catalina.
 - Fixed an issue that Caps Lock LED is always manipulated evenManipulate LEDsetting is off.
 - Fixed an issue that MultitouchExtension does not handle ignored area properly when a finger is touched ignored area repeatedly.
 
-`Manipulate LED`
+` Manipulate LED `
 ## Karabiner-Elements 12.7.0
 
 - 📦 Download
@@ -544,7 +544,7 @@ which is caused by some devices that sends abnormal input events.
 - Dark Mode has been supported.
 - Added--set-variablesoption intokarabiner_cli.
 
-`--set-variables`karabiner_cli`- Fixed an issue that Karabiner-Elements might stop working after sleep on macOS Catalina.
+`--set-variables ` karabiner_cli `- Fixed an issue that Karabiner-Elements might stop working after sleep on macOS Catalina.
 
 ## Karabiner-Elements 12.6.0
 
@@ -582,7 +582,7 @@ intoKarabiner-Elements Preferences > Devices > Advancedtab.
 - AddDelay before open deviceconfiguration intoKarabiner-Elements Preferences > Devices > Advancedtab.
 - AddedShow key code in hexadecimal formatoption into EventViewer.
 
-`Delay before open device`Karabiner-Elements Preferences > Devices > Advanced`Show key code in hexadecimal format`- Fixed a key stuck issue which occurs when the key is released,
+` Delay before open device ` Karabiner-Elements Preferences > Devices > Advanced ` Show key code in hexadecimal format `- Fixed a key stuck issue which occurs when the key is released,
 and at the exact same moment Karabiner-Elements opens the device.
 - Fixed an issue which Karabiner-Elements mistakes a remote user for a current console user
 if another user is logged in from Screen Sharing while console is used.
@@ -591,7 +591,7 @@ if another user is logged in from Screen Sharing while console is used.
 - MoveDisable the built-in keyboard while one of the following selected devices is connectedconfiguration
 intoKarabiner-Elements Preferences > Devices > Advancedtab.
 
-`XXX is ignored temporarily until YYY is pressed again`Disable the built-in keyboard while one of the following selected devices is connected`Karabiner-Elements Preferences > Devices > Advanced`
+` XXX is ignored temporarily until YYY is pressed again ` Disable the built-in keyboard while one of the following selected devices is connected ` Karabiner-Elements Preferences > Devices > Advanced `
 ## Karabiner-Elements 12.4.0
 
 - 📦 Download
@@ -605,7 +605,7 @@ intoKarabiner-Elements Preferences > Devices > Advancedtab.
 - AddMouse Key XY speedconfiguration intoKarabiner-Elements Preferences > Virtual Keyboardtab.
 - Device is ignored temporarilyalert has been introduced.This alert will be shown if you hold keys or buttons down before Karabiner-Elements opens the device.Please press the described key or button again to dismiss the alert.
 
-`Mouse Key XY speed`Karabiner-Elements Preferences > Virtual Keyboard`Device is ignored temporarily`- Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.
+` Mouse Key XY speed ` Karabiner-Elements Preferences > Virtual Keyboard ` Device is ignored temporarily `- Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.
 
 - Event code format on EventViewer changed to decimal number from hex.
 
@@ -630,7 +630,7 @@ It allows you checks a complex-modifications json file.
 
 - Note: You have to enable your mice onDevices tabwhen you want to use this feature.
 
-`--lint-complex-modifications`karabiner_cli`- Set Karabiner-Elements.app and Karabiner-EventViewer.app immutable
+`--lint-complex-modifications ` karabiner_cli `- Set Karabiner-Elements.app and Karabiner-EventViewer.app immutable
 in order to ensure unremovable them except built-in uninstaller.
 Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - Added a wait before grabbing device in order to avoid an macOS issue that device will be unusable after Karabiner-Elements is quit.
@@ -640,7 +640,7 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - New modifier aliases are added:left_alt,left_gui,right_alt,right_gui.
 - key_code,consumer_key_codeandpointing_buttonsupports a number value, e.g.,"from": {"key_code": 175}.
 
-`to`to_*`"to": { "key_code": "spacebar" }`left_alt`left_gui`right_alt`right_gui`key_code`consumer_key_code`pointing_button`"from": {"key_code": 175}`
+` to ` to_*`"to": { "key_code": "spacebar" }` left_alt ` left_gui ` right_alt ` right_gui ` key_code ` consumer_key_code ` pointing_button `"from": {"key_code": 175}`
 ## Karabiner-Elements 12.2.0
 
 - 📦 Download
@@ -661,7 +661,7 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - A device grabbing process has been improved. (Observing device state by a separatedkarabiner_observerprocess.)
 - The event processing has been improved and the latency has been reduced by usingpqrs::dispatcher.
 
-`shell_command`karabiner_observer`
+` shell_command ` karabiner_observer `
 ## Karabiner-Elements 12.1.0
 
 - 📦 Download
@@ -675,21 +675,21 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 
 - Changed the order ofto_if_aloneandto_after_key_upevent handling.to_if_alonewill be handled beforeto_after_key_up.
 
-`to_if_alone`to_after_key_up`to_if_alone`to_after_key_up`- Added new items intosimultaneous_options:simultaneous_options.detect_key_down_uninterruptedlysimultaneous_options.key_up_when
+` to_if_alone ` to_after_key_up ` to_if_alone ` to_after_key_up `- Added new items intosimultaneous_options:simultaneous_options.detect_key_down_uninterruptedlysimultaneous_options.key_up_when
 - Added new parameters intoto event definition:hold_down_millisecondshalt
 
-`simultaneous_options`- simultaneous_options.detect_key_down_uninterruptedly
+` simultaneous_options `- simultaneous_options.detect_key_down_uninterruptedly
 - simultaneous_options.key_up_when
 
-`simultaneous_options.detect_key_down_uninterruptedly`simultaneous_options.key_up_when`to event definition`- hold_down_milliseconds
+` simultaneous_options.detect_key_down_uninterruptedly ` simultaneous_options.key_up_when ` to event definition `- hold_down_milliseconds
 - halt
 
-`hold_down_milliseconds`halt`- Fixed an issue that random key repeat happen at extremely high system CPU usage.
+` hold_down_milliseconds ` halt `- Fixed an issue that random key repeat happen at extremely high system CPU usage.
 
 - Increased rollover limit of virtual keyboard. (6 -> 32)This change mainly improves usability when you are using multiple keyboards at the same time.
 - Improved modifier flags handling into_after_key_upandto_if_alone.
 
-`to_after_key_up`to_if_alone`
+` to_after_key_up ` to_if_alone `
 ## Karabiner-Elements 12.0.0
 
 - 📦 Download
@@ -707,15 +707,15 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - Changedsimultaneousbehaviour to post key_up events when any key is released.
 - Changedto_after_key_upandto_if_alonebehaviour as mandatory modifiers are removed from these events.
 
-`Keyboard type`System Preferences > Keyboard > Change Keyboard Type...`Caps Lock Delay`simultaneous`to_after_key_up`to_if_alone`- Addedsimultaneous_options.key_down_order,simultaneous_options.key_up_orderandsimultaneous_options.to_after_key_up.
+` Keyboard type ` System Preferences > Keyboard > Change Keyboard Type...` Caps Lock Delay ` simultaneous ` to_after_key_up ` to_if_alone `- Addedsimultaneous_options.key_down_order,simultaneous_options.key_up_orderandsimultaneous_options.to_after_key_up.
 
-`simultaneous_options.key_down_order`simultaneous_options.key_up_order`simultaneous_options.to_after_key_up`- Fixed an issue thatto_if_alone,to_if_held_downandto_delayed_actiondoes not work properly withsimultaneous.
+` simultaneous_options.key_down_order ` simultaneous_options.key_up_order ` simultaneous_options.to_after_key_up `- Fixed an issue thatto_if_alone,to_if_held_downandto_delayed_actiondoes not work properly withsimultaneous.
 
-`to_if_alone`to_if_held_down`to_delayed_action`simultaneous`- The virtual keyboard compatibility has been improved.
+` to_if_alone ` to_if_held_down ` to_delayed_action ` simultaneous `- The virtual keyboard compatibility has been improved.
 - EventViewer has been improved showing the correct key name for PC keyboard keys and international keys.
 - Improved keyboard repeat handling withsimultaneous.
 
-`simultaneous`
+` simultaneous `
 ## Karabiner-Elements 11.6.0
 
 - 📦 Download
@@ -733,7 +733,7 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - The eject key has been added into the from key of Simple Modifications.
 - The Vendor ID and Product ID of virtual devices has been changed. (0x0,0x0 -> 0x16c0,0x27db and 0x16c0,0x27da)
 
-`System Preferences > Mouse > Scroll direction`
+` System Preferences > Mouse > Scroll direction `
 ## Karabiner-Elements 11.5.0
 
 - 📦 Download
@@ -746,13 +746,13 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 
 - to_if_held_downhas been added.
 
-`to_if_held_down`- Avoided a VMware Remote Console issue that mouse pointer does not work properly on VMRC when Karabiner-Elements grabs the pointing device.
+` to_if_held_down `- Avoided a VMware Remote Console issue that mouse pointer does not work properly on VMRC when Karabiner-Elements grabs the pointing device.
 - Fixed an issue thatto_if_alonedoes not work properly whentois empty.
 
-`to_if_alone`to`- Improved modifier flags handling into events.
+` to_if_alone ` to `- Improved modifier flags handling into events.
 - Improved a way to save karabiner.json.
 
-`to events`
+` to events `
 ## Karabiner-Elements 11.4.0
 
 - 📦 Download
@@ -765,14 +765,14 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - mouse_keyhas been added.Examples:Mouse keys (simple):json(src)Mouse keys (full)json(src)
 - location_idhas been added todevice_ifanddevice_unless.
 
-`mouse_key`- Examples:Mouse keys (simple):json(src)Mouse keys (full)json(src)
+` mouse_key `- Examples:Mouse keys (simple):json(src)Mouse keys (full)json(src)
 
 - Mouse keys (simple):json(src)
 - Mouse keys (full)json(src)
 
-`location_id`device_if`device_unless`- Fixed an issue that the checkbox inPreferences > Devicesis disabled for keyboards which do not have their own vendor id.
+` location_id ` device_if ` device_unless `- Fixed an issue that the checkbox inPreferences > Devicesis disabled for keyboards which do not have their own vendor id.
 
-`Preferences > Devices`
+` Preferences > Devices `
 ## Karabiner-Elements 11.3.0
 
 - 📦 Download
@@ -802,7 +802,7 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 - You have to enable your Mouse manually in Preferences > Devices tab.
 - Karabiner-Elements cannot modify Apple’s pointing devices.
 
-`to_delayed_action`input_source_if`input_source_unless`conditions`select_input_source`keyboard_type_if`keyboard_type_unless`conditions`- The virtual keyboard handling has been improved.
+` to_delayed_action ` input_source_if ` input_source_unless ` conditions ` select_input_source ` keyboard_type_if ` keyboard_type_unless ` conditions `- The virtual keyboard handling has been improved.
 
 ## Karabiner-Elements 11.1.0
 
@@ -863,7 +863,7 @@ Please use theuninstallerwhen you want to remove Karabiner-Elements.
 
 - Option::FLIPSCROLLWHEEL_HORIZONTALandOption::FLIPSCROLLWHEEL_VERTICALhave been supported in__PointingRelativeToScroll__.
 
-`Option::FLIPSCROLLWHEEL_HORIZONTAL`Option::FLIPSCROLLWHEEL_VERTICAL`__PointingRelativeToScroll__`- Fixed an issue that Remote Desktop detection will be failed in some cases.
+` Option::FLIPSCROLLWHEEL_HORIZONTAL ` Option::FLIPSCROLLWHEEL_VERTICAL `__PointingRelativeToScroll__`- Fixed an issue that Remote Desktop detection will be failed in some cases.
 - Fixed an issue that input source switching settings does not work in some environments.
 
 ## Karabiner 10.19.0
@@ -886,7 +886,7 @@ For example, the vertical adjustment value forscreenandfront_windowis used in ho
 - The following filters have been added.<deviceexists_not><deviceexists_only>
 - The following environment variables has been added into replacementdef.{{ ENV_Select_the_previous_input_source_shortcut }}{{ ENV_Select_next_source_in_input_menu_shortcut }}
 
-`Use modifier symbols (⌘⌃⌥⇧⇪) in place of the modifier names`<bundleidentifieroverridedef>`Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS`- <deviceexists_not>
+` Use modifier symbols (⌘⌃⌥⇧⇪) in place of the modifier names `<bundleidentifieroverridedef>` Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS `- <deviceexists_not>
 - <deviceexists_only>
 
 `<deviceexists_not>`<deviceexists_only>`- {{ ENV_Select_the_previous_input_source_shortcut }}
@@ -897,7 +897,7 @@ For example, the vertical adjustment value forscreenandfront_windowis used in ho
 - Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (SAP GUI for Java)
 - Fixed an issue that ModifierFlag pattern matching ofOption::KEYTOKEY_AFTER_KEYUPin__KeyOverlaidModifier__and__HoldingKeyToKey__does not work property in some cases.
 
-`warp-mouse-cursor-position`screen`front_window`screen`front_window`Option::KEYTOKEY_AFTER_KEYUP`__KeyOverlaidModifier__`__HoldingKeyToKey__`- The device disconnect handling has been improved.
+` warp-mouse-cursor-position ` screen ` front_window ` screen ` front_window ` Option::KEYTOKEY_AFTER_KEYUP `__KeyOverlaidModifier__`__HoldingKeyToKey__`- The device disconnect handling has been improved.
 - Prepared settings have been updated.
 
 ## Karabiner 10.18.0
@@ -927,7 +927,7 @@ For example, the vertical adjustment value forscreenandfront_windowis used in ho
 - Option::FLIPSCROLLWHEEL_ROTATEhas been added.
 - PointingRelative::ANYhas been added into__PointingRelativeToKey__.
 
-`Option::FLIPSCROLLWHEEL_ROTATE`PointingRelative::ANY`__PointingRelativeToKey__`- “Disable an internal keyboard while external keyboards are connected” setting has been improved.Mionix Naos 7000 has been supported.Logitech Bluetooth Mouse M555b has been supported.Microsoft Sculpt Touch Mouse has been supported.
+` Option::FLIPSCROLLWHEEL_ROTATE ` PointingRelative::ANY `__PointingRelativeToKey__`- “Disable an internal keyboard while external keyboards are connected” setting has been improved.Mionix Naos 7000 has been supported.Logitech Bluetooth Mouse M555b has been supported.Microsoft Sculpt Touch Mouse has been supported.
 - The word-wrap property of setting description in Preferences became break-word.
 - The font size in Preferences has been selectable from “default font” and “large font”.
 - The consumer keys (media keys) repeat values has been synchronized with the key repeat values.
@@ -1088,7 +1088,7 @@ Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (F
 - Launcher Mode v2 uses own modifier flag in order to improve usability.If you extended Launcher Mode v2 byLAUNCHER_MODE_V2_EXTRA, please removeModifierFlag::NONEfromLAUNCHER_MODE_V2_EXTRA.
 - Example:old:<autogen>__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>new:<autogen>__KeyDownUpToKey__ KeyCode::A, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>
 
-`<inputsourcedetail_only>`<inputsourcedetail_not>`<inputsource_only>`<inputsource_not>`<inputsource_only>`<inputsource_not>`LAUNCHER_MODE_V2_EXTRA`ModifierFlag::NONE`LAUNCHER_MODE_V2_EXTRA`- old:<autogen>__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>
+`<inputsourcedetail_only>`<inputsourcedetail_not>`<inputsource_only>`<inputsource_not>`<inputsource_only>`<inputsource_not>` LAUNCHER_MODE_V2_EXTRA ` ModifierFlag::NONE ` LAUNCHER_MODE_V2_EXTRA `- old:<autogen>__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>
 - new:<autogen>__KeyDownUpToKey__ KeyCode::A, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>
 
 `<autogen>__KeyDownUpToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>`<autogen>__KeyDownUpToKey__ KeyCode::A, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>`- New option has been added into command line interface:toggle,be_careful_to_use__clear_all_values_by_name
@@ -1109,10 +1109,10 @@ Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (F
 - <appdef>behavior has been improved. It preserves prepared settings when you use<appdef>in private.xml for bundle identifiers that are in prepared appdef.xml.
 - KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_SCROLL_*have been added.
 
-`toggle`be_careful_to_use__clear_all_values_by_name`--flag`__DropAllKeys__`Option::KEYTOKEY_DELAYED_ACTION`Option::KEYTOKEY_INCREASE_MODIFIER_FLAGS`Option::SIMULTANEOUSKEYPRESSES_POST_FROM_EVENTS_AS_RAW`- <pressingphysicalkeys_greaterthan>
+` toggle ` be_careful_to_use__clear_all_values_by_name `--flag `__DropAllKeys__` Option::KEYTOKEY_DELAYED_ACTION ` Option::KEYTOKEY_INCREASE_MODIFIER_FLAGS ` Option::SIMULTANEOUSKEYPRESSES_POST_FROM_EVENTS_AS_RAW `- <pressingphysicalkeys_greaterthan>
 - <pressingphysicalkeys_lessthan>
 
-`<pressingphysicalkeys_greaterthan>`<pressingphysicalkeys_lessthan>`__HoldingKeyToKey__`Option::KEYTOKEY_AFTER_KEYUP`<background />`<vkopenurldef>`<identifier>`<appdef>`<appdef>`KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_SCROLL_*`- Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Eclipse, Screencast-O-Matic, RazorSQL, EditRocket)
+`<pressingphysicalkeys_greaterthan>`<pressingphysicalkeys_lessthan>`__HoldingKeyToKey__` Option::KEYTOKEY_AFTER_KEYUP `<background />`<vkopenurldef>`<identifier>`<appdef>`<appdef>` KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_SCROLL_*`- Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (Eclipse, Screencast-O-Matic, RazorSQL, EditRocket)
 - The kext loading issue on macOS 10.11 beta 6 has been fixed.
 
 ## Karabiner 10.6.0
@@ -1153,7 +1153,7 @@ Fixed an issue that some Java apps might be crash when AXNotifier is enabled. (F
 - __KeyDownUpToKey__has been added.
 - <include>ignores missing files. (Karabiner does not show an alert dialog when<include>refers missing files.)
 
-`<only>`<not>`Option::FORCENUMLOCKON_FORCE_OFF`__KeyDownUpToKey__`<include>`<include>`
+`<only>`<not>` Option::FORCENUMLOCKON_FORCE_OFF `__KeyDownUpToKey__`<include>`<include>`
 ## Karabiner 10.4.0
 
 - 📦 Download
@@ -1206,7 +1206,7 @@ Fixed an issue that EventViewer does not show control-tab and control-shift-tab 
 - __HoldingKeyToKey__and__KeyOverlaidModifier__supportOption::KEYTOKEY_BEFORE_KEYDOWNandOption::KEYTOKEY_AFTER_KEYUP.
 - You can also use__{ }__as well as@begin,@end.
 
-`__HoldingKeyToKey__`__KeyOverlaidModifier__`Option::KEYTOKEY_BEFORE_KEYDOWN`Option::KEYTOKEY_AFTER_KEYUP`__{ }__`@begin`@end`
+`__HoldingKeyToKey__`__KeyOverlaidModifier__` Option::KEYTOKEY_BEFORE_KEYDOWN ` Option::KEYTOKEY_AFTER_KEYUP `__{ }__`@begin `@end `
 ## Karabiner 10.1.0
 
 - 📦 Download
@@ -1224,7 +1224,7 @@ Fixed an issue that EventViewer does not show control-tab and control-shift-tab 
 - Updated prepared settings.
 - Some minor improvements.
 
-`KeyCode::VK_IOHIKEYBOARD_TOGGLE_NUMLOCK`
+` KeyCode::VK_IOHIKEYBOARD_TOGGLE_NUMLOCK `
 ## Karabiner 10.0.0
 
 - 📦 Download
@@ -1238,7 +1238,7 @@ Fixed an issue that EventViewer does not show control-tab and control-shift-tab 
 - KeyRemap4MacBook has been renamed to “Karabiner”.
 - KeyCode::VK_JIS_TEMPORARY_*are removed.Please use<inputsource_filter>,Option::KEYTOKEY_BEFORE_KEYDOWN,Option::KEYTOKEY_AFTER_KEYUP,KeyCode::JIS_EISUUandKeyCode::JIS_KANAinstead.
 
-`KeyCode::VK_JIS_TEMPORARY_*`<inputsource_filter>`Option::KEYTOKEY_BEFORE_KEYDOWN`Option::KEYTOKEY_AFTER_KEYUP`KeyCode::JIS_EISUU`KeyCode::JIS_KANA`- Fixed an issue that a message “Kernel extension is not loaded” might be shown in some environment.
+` KeyCode::VK_JIS_TEMPORARY_*`<inputsource_filter>` Option::KEYTOKEY_BEFORE_KEYDOWN ` Option::KEYTOKEY_AFTER_KEYUP ` KeyCode::JIS_EISUU ` KeyCode::JIS_KANA `- Fixed an issue that a message “Kernel extension is not loaded” might be shown in some environment.
 - Fixed an issue that status message will not be shown properly when you are using multiple displays.
 
 - AXNotifier has been added.AXNotifier allows you to observe the window name (window title) and the focused ui element role (eg. whether textarea or not).For example, a setting that allows you to use hjkl keys as arrow keys in Finder when you are not editing text such as filename has been added.
@@ -1264,11 +1264,11 @@ Fixed an issue that EventViewer does not show control-tab and control-shift-tab 
 
 - By pressing fn key alone.
 
-`<modifierdef>`<windowname_only>`<windowname_not>`<uielementrole_only>`<uielementrole_not>`__PointingRelativeToKey__`__PassThrough__`__PointingRelativeToScroll__`__HoldingKeyToKey__`__BlockUntilKeyUp__`Option::KEYOVERLAIDMODIFIER_REPEAT_TOKEYS`Option::DROPSCROLLWHEEL_DROP_MOMENTUM_SCROLL`KeyCode::VK_NEGATIVE_LOCK_*`KeyCode::VK_NEGATIVE_LOCK_COMMAND_L`KeyCode::VK_NEGATIVE_LOCK_SHIFT_L`KeyCode::VK_STICKY_ACTIVE_MODIFIERS_*`- KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE
+`<modifierdef>`<windowname_only>`<windowname_not>`<uielementrole_only>`<uielementrole_not>`__PointingRelativeToKey__`__PassThrough__`__PointingRelativeToScroll__`__HoldingKeyToKey__`__BlockUntilKeyUp__` Option::KEYOVERLAIDMODIFIER_REPEAT_TOKEYS ` Option::DROPSCROLLWHEEL_DROP_MOMENTUM_SCROLL ` KeyCode::VK_NEGATIVE_LOCK_*` KeyCode::VK_NEGATIVE_LOCK_COMMAND_L ` KeyCode::VK_NEGATIVE_LOCK_SHIFT_L ` KeyCode::VK_STICKY_ACTIVE_MODIFIERS_*`- KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE
 - KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON
 - KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF
 
-`KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE`KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON`KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF`
+` KeyCode::VK_STICKY_ACTIVE_MODIFIERS_TOGGLE ` KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON ` KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_OFF `
 ## KeyRemap4MacBook 9.3.0
 
 - 📦 Download
@@ -1303,10 +1303,10 @@ You can change the delay and speed of keyboard repeat per autogen.
 - __ScrollWheelToKey__
 - __PointingRelativeToScroll__
 
-`__KeyOverlaidModifier__`__HoldingKeyToKey__`__SimultaneousKeyPresses__`__DoublePressModifier__`__ScrollWheelToKey__`__PointingRelativeToScroll__`DelayUntilRepeat`KeyRepeat`- Updated prepared settings.
+`__KeyOverlaidModifier__`__HoldingKeyToKey__`__SimultaneousKeyPresses__`__DoublePressModifier__`__ScrollWheelToKey__`__PointingRelativeToScroll__` DelayUntilRepeat ` KeyRepeat `- Updated prepared settings.
 - ImprovedKeyCode::VK_CONFIG_*behavior in the edge case.
 
-`KeyCode::VK_CONFIG_*`
+` KeyCode::VK_CONFIG_*`
 ## KeyRemap4MacBook 9.2.0
 
 - 📦 Download
@@ -1368,7 +1368,7 @@ You can use more than one key to remapped keys with__KeyOverlaidModifier__,__Dou
 You can use more than one key to remapped keys with__KeyOverlaidModifier__,__DoublePressModifier__.
 - Shell commands execution has been supported withKeyCode::VK_OPEN_URL_*.
 
-`@begin`@end`__KeyOverlaidModifier__`__DoublePressModifier__`KeyCode::VK_OPEN_URL_*`- Icons have been refined. (Thanks to Kouji TAMURA.)
+`@begin `@end `__KeyOverlaidModifier__`__DoublePressModifier__` KeyCode::VK_OPEN_URL_*`- Icons have been refined. (Thanks to Kouji TAMURA.)
 
 ## KeyRemap4MacBook 8.3.0
 
@@ -1414,7 +1414,7 @@ You can use more than one key to remapped keys with__KeyOverlaidModifier__,__Dou
 - Added__FlipScrollWheel__.
 - Added filters:<lastpressedphysicalkey_not><lastpressedphysicalkey_only><elapsedtimesincelastpressed_greaterthan><elapsedtimesincelastpressed_lessthan>
 
-`KeyCode::VK_OPEN_URL_*`KeyCode::VK_PARTIAL_KEYDOWN`KeyCode::VK_PARTIAL_KEYUP`Option::POINTINGRELATIVETOSCROLL_TOKEYS`__FlipPointingRelative__`__FlipScrollWheel__`- <lastpressedphysicalkey_not>
+` KeyCode::VK_OPEN_URL_*` KeyCode::VK_PARTIAL_KEYDOWN ` KeyCode::VK_PARTIAL_KEYUP ` Option::POINTINGRELATIVETOSCROLL_TOKEYS `__FlipPointingRelative__`__FlipScrollWheel__`- <lastpressedphysicalkey_not>
 - <lastpressedphysicalkey_only>
 - <elapsedtimesincelastpressed_greaterthan>
 - <elapsedtimesincelastpressed_lessthan>
@@ -1445,7 +1445,7 @@ AddedDeviceLocationinto<device_only>,<device_not>filters.
 AddedOption::SIMULTANEOUSKEYPRESSES_STRICT_KEY_ORDER.
 AddedDeviceLocationinto<device_only>,<device_not>filters.
 
-`KeyCode::VK_CHANGE_INPUTSOURCE`<inputsource_only>`Option::SIMULTANEOUSKEYPRESSES_STRICT_KEY_ORDER`DeviceLocation`<device_only>`<device_not>`- Preferences has been integrated into app.
+` KeyCode::VK_CHANGE_INPUTSOURCE `<inputsource_only>` Option::SIMULTANEOUSKEYPRESSES_STRICT_KEY_ORDER ` DeviceLocation `<device_only>`<device_not>`- Preferences has been integrated into app.
 - Changed--KeyToKey--to__KeyToKey__at<autogen>.
 - Some minor improvements.
 
@@ -1488,7 +1488,7 @@ AddedDeviceLocationinto<device_only>,<device_not>filters.
 - Added--ScrollWheelToScrollWheel--.
 - AddedKeyCode::VK_WAIT_*.
 
-`<replacementdef>`<include>`--ScrollWheelToKey--`--ScrollWheelToScrollWheel--`KeyCode::VK_WAIT_*`- Improved XML processing engine. (XML reloading is 2x faster.)
+`<replacementdef>`<include>`--ScrollWheelToKey--`--ScrollWheelToScrollWheel--` KeyCode::VK_WAIT_*`- Improved XML processing engine. (XML reloading is 2x faster.)
 - Some minor improvements.
 - Increased prepared settings.
 
@@ -1508,7 +1508,7 @@ AddedDeviceLocationinto<device_only>,<device_not>filters.
 - AddedOption::KEYTOKEY_BEFORE_KEYDOWN,Option::KEYTOKEY_AFTER_KEYUP.
 - AddedKeyCode::VK_CONSUMERKEY_*.
 
-`--StripModifierFromScrollWheel--`Option::KEYTOKEY_BEFORE_KEYDOWN`Option::KEYTOKEY_AFTER_KEYUP`KeyCode::VK_CONSUMERKEY_*`- Some minor improvements.
+`--StripModifierFromScrollWheel--` Option::KEYTOKEY_BEFORE_KEYDOWN ` Option::KEYTOKEY_AFTER_KEYUP ` KeyCode::VK_CONSUMERKEY_*`- Some minor improvements.
 - Increased prepared settings.
 
 - Resolved a minor installer issue.
@@ -1538,7 +1538,7 @@ This preference is useful if your typing speed is too fast.
 - AddedKeyCode::VK_STICKY_*_FORCE_ON,KeyCode::VK_STICKY_*_FORCE_OFF.
 - Added--DropScrollWheel--.
 
-`KeyCode::VK_STICKY_*_FORCE_ON`KeyCode::VK_STICKY_*_FORCE_OFF`--DropScrollWheel--`- Some improvements on Mac macOS 10.7 (Lion).
+` KeyCode::VK_STICKY_*_FORCE_ON ` KeyCode::VK_STICKY_*_FORCE_OFF `--DropScrollWheel--`- Some improvements on Mac macOS 10.7 (Lion).
 - Some minor improvements.
 - Increased prepared settings.
 
@@ -1555,13 +1555,13 @@ This preference is useful if your typing speed is too fast.
 - AddedOption::NOREPEAT.
 - AddedDeviceProduct::ANY.
 
-`KeyCode::VK_MOUSEKEY_BUTTON_*`Option::NOREPEAT`DeviceProduct::ANY`- Improved stability when using Sticky Keys in Universal Access.
+` KeyCode::VK_MOUSEKEY_BUTTON_*` Option::NOREPEAT ` DeviceProduct::ANY `- Improved stability when using Sticky Keys in Universal Access.
 - Improved stability when using multi-touch extension together.
 - Improved “Lazy-Modifier (KeyCode::VK_LAZY_*)” behavior.
 - Some minor improvements.
 - Increased prepared settings.
 
-`KeyCode::VK_LAZY_*`
+` KeyCode::VK_LAZY_*`
 ## KeyRemap4MacBook 7.2.0
 
 - 📦 Download
@@ -1684,7 +1684,7 @@ Please set “[Key Repeat] wait” to “30ms” from “Key Repeat” tab if yo
 - Added virtual modifiers (ModifierFlag::EXTRA1-ModifierFlag::EXTRA5).
 - Added a function to set the repeat speed of the functional keys (volume adjustment, etc).
 
-`ModifierFlag::EXTRA1`ModifierFlag::EXTRA5`- Increased prepared settings.
+` ModifierFlag::EXTRA1` ModifierFlag::EXTRA5`- Increased prepared settings.
 
 ## KeyRemap4MacBook 6.5.0
 
@@ -1700,7 +1700,7 @@ Please set “[Key Repeat] wait” to “30ms” from “Key Repeat” tab if yo
 - Added “Complete Vi Mode” that you can move the cursor only in “hjkl” without pushing the command key or any modifier keys.
 - AddedKeyCode::VK_CHANGE_INPUTMODE_FRENCH, and keys for the other languages. It is a virtual key to change the Input Source directly.
 
-`KeyCode::VK_CHANGE_INPUTMODE_FRENCH`- Merged the configuration GUI of menu bar to the system preference pane.
+` KeyCode::VK_CHANGE_INPUTMODE_FRENCH `- Merged the configuration GUI of menu bar to the system preference pane.
 - Increased prepared settings.
 
 ## KeyRemap4MacBook 6.4.0

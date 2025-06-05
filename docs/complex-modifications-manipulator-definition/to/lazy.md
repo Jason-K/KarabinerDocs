@@ -23,7 +23,7 @@ Behavior of the json:
 - Only thereturn_or_enterkey event will be sent when you pressleft_control + m.
 - You can useleft_controlfor other keys such asleft_control + a,left_control + b, etc.
 
-`json
+` json
 {
     "description": "Change left_control as a lazy modifier, left_control+m to return_or_enter",
     "manipulators": [
@@ -56,4 +56,3 @@ Behavior of the json:
         }
     ]
 }
-`

@@ -15,7 +15,7 @@ to_after_key_upis typically used to:
 
 The following json changes holdingtabkey tomute.
 
-`json
+` json
 {
     "description": "Mute when tab is held down",
     "manipulators": [
@@ -32,4 +32,3 @@ The following json changes holdingtabkey tomute.
         }
     ]
 }
-`

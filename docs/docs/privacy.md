@@ -30,19 +30,19 @@ And because the process is protected by administrative privileges, keystrokes ca
 
 Specifically, the process with administrative privileges iskarabiner_grabber; it is the core process in Karabiner-Elements that captures and modifies keystrokes.
 
-`karabiner_grabber`Note:Karabiner-EventVieweroperates with lower privileges thankarabiner_grabber.
+` karabiner_grabber ` Note:Karabiner-EventVieweroperates with lower privileges thankarabiner_grabber.
 Since it runs with user privileges, it cannot receive keystrokes during password inputs or similar actions when Secure Keyboard Entry is enabled.
 
-`Karabiner-EventViewer`karabiner_grabber`
+` Karabiner-EventViewer ` karabiner_grabber `
 #### Input event manipulation
 
 After capturing keystrokes, thekarabiner_grabberprocess modifies input events based on user settings.
 Modifying input events is also performed with security considerations in mind.
 
-`karabiner_grabber`To prevent the addition of malicious input from other applications,karabiner_grabberperforms closed operations within the process, which has administrative privileges.
+` karabiner_grabber ` To prevent the addition of malicious input from other applications,karabiner_grabberperforms closed operations within the process, which has administrative privileges.
 And thekarabiner_grabberprocess does not knowingly alter, insert or manipulate any keystrokes other than as configured and expected by the user.
 
-`karabiner_grabber`karabiner_grabber`Note:Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please seeImplicit behavior.
+` karabiner_grabber ` karabiner_grabber ` Note:Some combinations, such as fn+arrow keys, are implicitly changed. For a list, please seeImplicit behavior.
 
 #### User data and files
 
@@ -60,7 +60,7 @@ Since Karabiner-Elements v14.99.2, a unique random ID called karabiner_machine_i
 This ID may be included in the configuration file karabiner.json when machine-specific settings are made.
 For instance, when the Multitouch Extension is enabled, the following content is added to karabiner.json, and the string starting withkrbn-is the karabiner_machine_identifier.
 
-`krbn-`This string is completely random and does not contain any unique information about the user or the machine.
+` krbn-` This string is completely random and does not contain any unique information about the user or the machine.
 In other words, this ID is not linked to information like your Apple ID or Mac’s serial number.
 Therefore, it is a safe ID to share with others, and there is no need to mask it when you share karabiner.json with others.
 
@@ -70,15 +70,13 @@ Of course, Karabiner-Elements never collect this ID.
 
 The karabiner_machine_identifier is in the formatkrbn-{UUID v4}.
 
-`krbn-{UUID v4}`The generated ID is saved in/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.jsonas the following forms.
+` krbn-{UUID v4}` The generated ID is saved in/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.jsonas the following forms.
 
-`/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.json`
+`/Library/Application Support/org.pqrs/tmp/karabiner_machine_identifier.json `
 
-```json
+` json
 {"karabiner_machine_identifier":"krbn-818632bf-2a88-4ac0-ad0b-4524721c217b"}
-```
 
-`
 
 `{"karabiner_machine_identifier":"krbn-818632bf-2a88-4ac0-ad0b-4524721c217b"}`
 #### Data being collected
@@ -98,15 +96,13 @@ You can change the automatic update setting in Update tab.
 
 appcast.pqrs.orgreceives the version information like follows:
 
-`appcast.pqrs.org`
+` appcast.pqrs.org `
 150.249.243.141 - - [13/Feb/2021:18:37:14 +0900]"GET /karabiner-elements-appcast.xml HTTP/2.0" 200 2389"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"
-`
 
 `150.249.243.141 - - [13/Feb/2021:18:37:14 +0900]"GET /karabiner-elements-appcast.xml HTTP/2.0" 200 2389"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"`
 150.249.243.141 - - [13/Feb/2021:19:26:15 +0900]"GET /karabiner-elements-appcast-devel.xml HTTP/2.0" 200 740"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"
-`
 
-`150.249.243.141 - - [13/Feb/2021:19:26:15 +0900]"GET /karabiner-elements-appcast-devel.xml HTTP/2.0" 200 740"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"`The received data contains:
+`150.249.243.141 - - [13/Feb/2021:19:26:15 +0900]"GET /karabiner-elements-appcast-devel.xml HTTP/2.0" 200 740"-" "Karabiner-Elements/13.3.0 Sparkle/1.24.0" "-"` The received data contains:
 
 
 | Name | Example |

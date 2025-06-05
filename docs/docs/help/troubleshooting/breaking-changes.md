@@ -22,7 +22,7 @@ The following changes have been made due to the update where the virtual keyboar
 - The virtual keyboard settings underSystem Settings > Keyboard > Keyboard Shortcuts... > Modifier Keyswill now be shared with those of the Apple Aluminum USB Keyboard (A1243).
 If you’ve used this keyboard before, it’s worth reviewing your settings.
 
-`System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys`
+` System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys `
 ### Function Keys
 
 - The “Use all F1, F2, etc. keys as standard function keys” setting now needs to be changed from System Settings.
@@ -47,27 +47,25 @@ You will need to hold the key for about 100 milliseconds to toggle Caps Lock on 
 
 - If you are writing your own Complex Modifications, please usehold_down_millisecondsand appendvk_noneaftercaps_lock.
 
-`vk_none`caps_lock`
+` vk_none ` caps_lock `
 #### Migration Example
 
 #### Before
 
-`
+
+` json
 {"description":"Change right_shift to caps_lock","manipulators":[{"from":{"key_code":"right_shift","modifiers":{"optional":"any"}},"to":[{"key_code":"caps_lock"}],"type":"basic"}]}
-`
 
 `{"description":"Change right_shift to caps_lock","manipulators":[{"from":{"key_code":"right_shift","modifiers":{"optional":"any"}},"to":[{"key_code":"caps_lock"}],"type":"basic"}]}`
 #### After
 
-`
+
+` json
 {"description":"Change right_shift to caps_lock","manipulators":[{"from":{"key_code":"right_shift","modifiers":{"optional":"any"}},"to":[{"key_code":"caps_lock","hold_down_milliseconds":200},{"key_code":"vk_none"}],"type":"basic"}]}
-`
 
 `{"description":"Change right_shift to caps_lock","manipulators":[{"from":{"key_code":"right_shift","modifiers":{"optional":"any"}},"to":[{"key_code":"caps_lock","hold_down_milliseconds":200},{"key_code":"vk_none"}],"type":"basic"}]}`
 #### Diff
 
-`
 "to": [-                {-                    "key_code": "caps_lock"-                }+                {+                    "key_code": "caps_lock",+                    "hold_down_milliseconds": 200+                },+                { "key_code": "vk_none" }],
-`
 
 `"to": [-                {-                    "key_code": "caps_lock"-                }+                {+                    "key_code": "caps_lock",+                    "hold_down_milliseconds": 200+                },+                { "key_code": "vk_none" }],`

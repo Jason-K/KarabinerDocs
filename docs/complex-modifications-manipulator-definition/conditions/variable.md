@@ -16,9 +16,9 @@ Change an event if/unless the variable is the specified value.
 
 Pressing theakey while holding theescapekey launches Activity Monitor.
 
-`
+
+` json
 {"description":"Pressing the a key while holding the escape key launches Activity Monitor","manipulators":[{"type":"basic","from":{"key_code":"escape","modifiers":{"optional":["any"]}},"to":[{"set_variable":{"name":"escape_pressed","value":true,"key_up_value":false}}],"to_if_alone":[{"key_code":"escape"}]},{"type":"basic","from":{"key_code":"a","modifiers":{"optional":["any"]}},"to":[{"software_function":{"open_application":{"bundle_identifier":"com.apple.ActivityMonitor"}}}],"conditions":[{"type":"variable_if","name":"escape_pressed","value":true}]}]}
-`
 
 `{"description":"Pressing the a key while holding the escape key launches Activity Monitor","manipulators":[{"type":"basic","from":{"key_code":"escape","modifiers":{"optional":["any"]}},"to":[{"set_variable":{"name":"escape_pressed","value":true,"key_up_value":false}}],"to_if_alone":[{"key_code":"escape"}]},{"type":"basic","from":{"key_code":"a","modifiers":{"optional":["any"]}},"to":[{"software_function":{"open_application":{"bundle_identifier":"com.apple.ActivityMonitor"}}}],"conditions":[{"type":"variable_if","name":"escape_pressed","value":true}]}]}`
 ## Specification
@@ -27,16 +27,14 @@ Pressing theakey while holding theescapekey launches Activity Monitor.
 
 variable_ifandvariable_unlessare designed to be used with the following features:
 
-`variable_if`variable_unless`- set_variable
+` variable_if ` variable_unless `- set_variable
 - --set-variablesin command line interface
 
-`set_variable`--set-variables`
+` set_variable `--set-variables `
 
-```json
+` json
 {"type":"variable_if","name":"variable name","value":variablevalue}
-```
 
-`
 
 `{"type":"variable_if","name":"variable name","value":variablevalue}`
 
@@ -46,10 +44,10 @@ variable_ifandvariable_unlessare designed to be used with the following features
 | value | Required | Target variable value. |
 | description | Optional | A human-readable comment |
 
-`type`"variable_if"`"variable_unless"`name`value`description`
+` type `"variable_if"`"variable_unless"` name ` value ` description `
 ### Available types ofvalue
 
-`value`
+` value `
 
 | Type | Example value | Available since |
 | integer | 0,1,2,… | Karabiner-Elements 11.0.0 |
@@ -60,10 +58,10 @@ variable_ifandvariable_unlessare designed to be used with the following features
 
 Whenever the type ofvalueis different, it is treated as having different contents.
 
-`value`- 1!=true
+` value `- 1!=true
 - true!="true"
 
-`1`true`true`"true"`
+`1` true ` true `"true"`
 #### Default value
 
 `0`
@@ -80,4 +78,4 @@ Some variables are automatically set by Karabiner-Elements.
 | system.scroll_direction_is_natural | boolean | The scroll direction setting of mouse in System Settings | Karabiner-Elements 15.2.3 |
 | system.use_fkeys_as_standard_function_keys | boolean | The “Use all F1, F2, etc. keys as standard function keys” setting in System Settings | Karabiner-Elements 15.2.3 |
 
-`system.scroll_direction_is_natural`system.use_fkeys_as_standard_function_keys`
+` system.scroll_direction_is_natural ` system.use_fkeys_as_standard_function_keys `

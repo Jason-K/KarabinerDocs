@@ -12,7 +12,7 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 
 software_functiontriggers a function that is implemented by software.
 
-`software_function`- cg_event_double_clickSend double click event by software.
+` software_function `- cg_event_double_clickSend double click event by software.
 - iokit_power_management_sleep_systemCauses an immediate system sleep.
 - open_applicationOpen an application, or if it’s already running, bring it into focus.
 - set_mouse_cursor_positionMove the mouse cursor to the specified point.

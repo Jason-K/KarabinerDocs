@@ -9,9 +9,9 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 
 # from event definition
 
-`
+
+` json
 {"from":{"key_code":"The name of key_code","consumer_key_code":"The name of consumer_key_code","pointing_button":"The name of pointing_button","any":"key_code or consumer_key_code or pointing_button","modifiers":{"mandatory":[modifier,modifier,...],"optional":[modifier,modifier,...]},"simultaneous":[{"key_code, consumer_key_code, pointing_button or any"},{"key_code, consumer_key_code, pointing_button or any"},...],"simultaneous_options":{"detect_key_down_uninterruptedly":false,"key_down_order":"A restriction of input events order","key_up_order":"A restriction of input events order","key_up_when":"When key_up events are posted","to_after_key_up":[toeventdefinition,toeventdefinition,...]}}}
-`
 
 `{"from":{"key_code":"The name of key_code","consumer_key_code":"The name of consumer_key_code","pointing_button":"The name of pointing_button","any":"key_code or consumer_key_code or pointing_button","modifiers":{"mandatory":[modifier,modifier,...],"optional":[modifier,modifier,...]},"simultaneous":[{"key_code, consumer_key_code, pointing_button or any"},{"key_code, consumer_key_code, pointing_button or any"},...],"simultaneous_options":{"detect_key_down_uninterruptedly":false,"key_down_order":"A restriction of input events order","key_up_order":"A restriction of input events order","key_up_when":"When key_up events are posted","to_after_key_up":[toeventdefinition,toeventdefinition,...]}}}`
 
@@ -24,10 +24,10 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 | simultaneous | Optional | Specify multiple events which are pressed simultaneously |
 | simultaneous_options | Optional | Options forsimultaneous |
 
-`key_code`consumer_key_code`pointing_button`any`"any": "key_code"`"any": "consumer_key_code"`"any": "pointing_button"`modifiers`simultaneous`simultaneous_options`simultaneous`
+` key_code ` consumer_key_code ` pointing_button ` any `"any": "key_code"`"any": "consumer_key_code"`"any": "pointing_button"` modifiers ` simultaneous ` simultaneous_options ` simultaneous `
 #### Note
 
-`key_code`consumer_key_code`pointing_button`any`
+` key_code ` consumer_key_code ` pointing_button ` any `
 #### Caution
 
 `"pointing_button": "button1"`"any": "pointing_button"`
@@ -44,16 +44,17 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 - You can also confirmnames in list.
 (See"data"in the list.)
 
-`key_code`consumer_key_code`pointing_button`"data"`
+` key_code ` consumer_key_code ` pointing_button `"data"`
 #### Tip
 
 You can also specifykey_code,consumer_key_code,pointing_buttonwith raw number as follows.
 
-`key_code`consumer_key_code`pointing_button`
-{"from":{"key_code":41}}
-`
+` key_code ` consumer_key_code ` pointing_button `
 
-`{"from":{"key_code":41}}`Do not add double quotes when you use the raw number.
+` json
+{"from":{"key_code":41}}
+
+`{"from":{"key_code":41}}` Do not add double quotes when you use the raw number.
 
 ## Table of Contents
 

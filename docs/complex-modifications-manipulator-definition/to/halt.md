@@ -12,15 +12,16 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 
 to.haltis specified into_if_aloneorto_if_held_downand is used to cancel subsequent actions liketo_after_key_uporto_delayed_action.
 
-`to.halt`to_if_alone`to_if_held_down`to_after_key_up`to_delayed_action`
+` to.halt ` to_if_alone ` to_if_held_down ` to_after_key_up ` to_delayed_action `
 ## Example
 
 The following json changes holdingtabkey tomute.
 
-`tab`mute`Thehaltinto_if_held_downsuppressesto_after_key_upwhenmuteis sent.
+` tab ` mute ` Thehaltinto_if_held_downsuppressesto_after_key_upwhenmuteis sent.
 
-`halt`to_if_held_down`to_after_key_up`mute`
+` halt ` to_if_held_down ` to_after_key_up ` mute `
+
+` json
 {"description":"Mute when tab is held down","manipulators":[{"type":"basic","from":{"key_code":"tab"},"to_after_key_up":[{"key_code":"tab"}],"to_if_held_down":[{"consumer_key_code":"mute","halt":true}]}]}
-`
 
 `{"description":"Mute when tab is held down","manipulators":[{"type":"basic","from":{"key_code":"tab"},"to_after_key_up":[{"key_code":"tab"}],"to_if_held_down":[{"consumer_key_code":"mute","halt":true}]}]}`

@@ -18,22 +18,19 @@ The keyboard type mentioned here refers tothe type of the virtual keyboard.
 
 Changecontrol-[key toescape, including JIS layout support.
 
-`control-[`escape`Note:the[key isclose_bracketin JIS layout
+` control-[` escape ` Note:the[key isclose_bracketin JIS layout
 
-`
+
+` json
 {"description":"Change control-[ to escape","manipulators":[{"type":"basic","from":{"key_code":"open_bracket","modifiers":{"mandatory":["control"],"optional":["caps_lock"]}},"to":[{"key_code":"escape"}],"conditions":[{"keyboard_types":["ansi","iso"],"type":"keyboard_type_if"}]},{"type":"basic","from":{"key_code":"close_bracket","modifiers":{"mandatory":["control"],"optional":["caps_lock"]}},"to":[{"key_code":"escape"}],"conditions":[{"keyboard_types":["jis"],"type":"keyboard_type_if"}]}]}
-`
 
 `{"description":"Change control-[ to escape","manipulators":[{"type":"basic","from":{"key_code":"open_bracket","modifiers":{"mandatory":["control"],"optional":["caps_lock"]}},"to":[{"key_code":"escape"}],"conditions":[{"keyboard_types":["ansi","iso"],"type":"keyboard_type_if"}]},{"type":"basic","from":{"key_code":"close_bracket","modifiers":{"mandatory":["control"],"optional":["caps_lock"]}},"to":[{"key_code":"escape"}],"conditions":[{"keyboard_types":["jis"],"type":"keyboard_type_if"}]}]}`
 ## Specification
 
-`
 
-```json
+` json
 {"type":"keyboard_type_if","keyboard_types":["ansi","iso"]}
-```
 
-`
 
 `{"type":"keyboard_type_if","keyboard_types":["ansi","iso"]}`
 
@@ -42,19 +39,16 @@ Changecontrol-[key toescape, including JIS layout support.
 | keyboard_types | Required | An array of"ansi","iso"or"jis" |
 | description | Optional | A human-readable comment |
 
-`type`"keyboard_type_if"`"keyboard_type_unless"`keyboard_types`"ansi"`"iso"`"jis"`description`
+` type `"keyboard_type_if"`"keyboard_type_unless"` keyboard_types `"ansi"`"iso"`"jis"` description `
 ### Multiple keyboard types
 
 keyboard_typesare joined by “or”.
 
-`keyboard_types`The following condition is matched if the keyboard type is “ansi”or“iso”.
+` keyboard_types ` The following condition is matched if the keyboard type is “ansi”or“iso”.
 
-`
 
-```json
+` json
 {"type":"keyboard_type_if","keyboard_types":["ansi","iso"]}
-```
 
-`
 
 `{"type":"keyboard_type_if","keyboard_types":["ansi","iso"]}`

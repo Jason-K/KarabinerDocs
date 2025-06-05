@@ -21,19 +21,19 @@ However, we explain the macOS settings made during the initial setup of Karabine
 Karabier-Elements has processes running constantly in the background, that handle input events.
 You have to keep the background items enabled inmacOS System Settings > General > Login Items.
 
-`macOS System Settings > General > Login Items`
+` macOS System Settings > General > Login Items `
 ## Enable Input Monitoring
 
 Karabiner-Elements requires Input Monitoring permission to receive and modify input events.
 
 You can enable it inmacOS System Settings > Privacy & Security > Input Monitoring.
 
-`macOS System Settings > Privacy & Security > Input Monitoring`
+` macOS System Settings > Privacy & Security > Input Monitoring `
 #### Troubleshooting
 
 If you cannot findkarabiner_grabberin the list, this is because you have not closed the following “Keystroke Receiving” dialogs.karabiner_grabberwill be shown in the list after the dialogs are closed.
 
-`karabiner_grabber`karabiner_grabber`If you don’t see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​
+` karabiner_grabber ` karabiner_grabber ` If you don’t see the dialog, it might be an issue with macOS not displaying it. Try restarting macOS.​
 
 ## Allow system extension
 
@@ -43,10 +43,10 @@ You can confirm whether the system extension already allowed inEventViewer.
 
 Iforg.pqrs.Karabiner-DriverKit-VirtualHIDDeviceappears in the System Extensions of the EventViewer and the status is[activated enabled], the system extension is already allowed.
 
-`org.pqrs.Karabiner-DriverKit-VirtualHIDDevice`[activated enabled]`Otherwise, you have to approve the system extension in macOS System Settings.
+` org.pqrs.Karabiner-DriverKit-VirtualHIDDevice `[activated enabled]` Otherwise, you have to approve the system extension in macOS System Settings.
 
 ### Approve system extension
 
 You can approve the system extension inmacOS System Settings > Login Items & Extensions > Driver Extensions.
 
-`macOS System Settings > Login Items & Extensions > Driver Extensions`
+` macOS System Settings > Login Items & Extensions > Driver Extensions `

@@ -13,9 +13,9 @@ You can disable MacBook built-in keyboard if external keyboards are connected.Th
 
 EnableDisable the built-in keyboard while this device is connectedin Devices tab.
 
-`Disable the built-in keyboard while this device is connected`
+` Disable the built-in keyboard while this device is connected `
 ## Configure the built-in keyboard detection
 
 EnableTreat as a built-in keyboardin Devices if your built-in keyboard is not recognized properly or you want to add a device that will be disabled,
 
-`Treat as a built-in keyboard`
+` Treat as a built-in keyboard `

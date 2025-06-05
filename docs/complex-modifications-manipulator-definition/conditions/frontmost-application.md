@@ -16,20 +16,18 @@ Change an event if/unless the frontmost application is the specified application
 
 Changecontrol-hkey todelete_or_backspaceexcept in Terminal.
 
-`control-h`delete_or_backspace`
+` control-h ` delete_or_backspace `
+
+` json
 {"description":"Change control-h to delete_or_backspace except in Terminal","manipulators":[{"type":"basic","from":{"key_code":"h","modifiers":{"mandatory":["control"],"optional":["any"]}},"to":[{"key_code":"delete_or_backspace"}],"conditions":[{"type":"frontmost_application_unless","bundle_identifiers":["^com\\.apple\\.Terminal$"]}]}]}
-`
 
 `{"description":"Change control-h to delete_or_backspace except in Terminal","manipulators":[{"type":"basic","from":{"key_code":"h","modifiers":{"mandatory":["control"],"optional":["any"]}},"to":[{"key_code":"delete_or_backspace"}],"conditions":[{"type":"frontmost_application_unless","bundle_identifiers":["^com\\.apple\\.Terminal$"]}]}]}`
 ## Specification
 
-`
 
-```json
+` json
 {"type":"frontmost_application_if","bundle_identifiers":[bundleidentifierregex,bundleidentifierregex,...],"file_paths":[filepathregex,filepathregex,...]}
-```
 
-`
 
 `{"type":"frontmost_application_if","bundle_identifiers":[bundleidentifierregex,bundleidentifierregex,...],"file_paths":[filepathregex,filepathregex,...]}`
 
@@ -39,20 +37,17 @@ Changecontrol-hkey todelete_or_backspaceexcept in Terminal.
 | file_paths | Optional | File path regexs such as["/Finder$"] |
 | description | Optional | A human-readable comment |
 
-`type`"frontmost_application_if"`"frontmost_application_unless"`bundle_identifiers`["^com\\.apple\\.Terminal$", "^com\\.googlecode\\.iterm2$"]`file_paths`["/Finder$"]`description`
+` type `"frontmost_application_if"`"frontmost_application_unless"` bundle_identifiers `["^com\\.apple\\.Terminal$", "^com\\.googlecode\\.iterm2$"]` file_paths `["/Finder$"]` description `
 ### Multiple bundle identifiers or file paths
 
 Multiple entries inbundle_identifiersandfile_pathsare joined by “or”.
 
-`bundle_identifiers`file_paths`The following condition is matched if bundle identifier is “com.apple.Terminal”or“com.googlecode.iterm2”.
+` bundle_identifiers ` file_paths ` The following condition is matched if bundle identifier is “com.apple.Terminal”or“com.googlecode.iterm2”.
 
-`
 
-```json
+` json
 {"type":"frontmost_application_if","bundle_identifiers":["^com\\.apple\\.Terminal$","^com\\.googlecode\\.iterm2$"]}
-```
 
-`
 
 `{"type":"frontmost_application_if","bundle_identifiers":["^com\\.apple\\.Terminal$","^com\\.googlecode\\.iterm2$"]}`
 ### Investigate the bundle identifier and file path

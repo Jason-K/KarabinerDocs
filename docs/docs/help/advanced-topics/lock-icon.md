@@ -29,13 +29,11 @@ The file protection forces to usethe built-in uninstallerand remove installed fi
 
 This file locking is achieved withschganduchgflags.
 
-`schg`uchg`You can unlock these files by running the following commands in Terminal.
+` schg ` uchg ` You can unlock these files by running the following commands in Terminal.
 (Administrator password is required to run the commands.)
 
-`
 sudo chflags nouchg,noschg /Applications/Karabiner-Elements.appsudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app
-`
 
-`sudo chflags nouchg,noschg /Applications/Karabiner-Elements.appsudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app`In particular, if Full Disk Access rights have not been granted to Terminal, “Operation not permitted” error may be displayed.
+` sudo chflags nouchg,noschg /Applications/Karabiner-Elements.appsudo chflags nouchg,noschg /Applications/Karabiner-EventViewer.app ` In particular, if Full Disk Access rights have not been granted to Terminal, “Operation not permitted” error may be displayed.
 In this case, the safest solution is to grant App Management rights to Terminal.
 

@@ -19,11 +19,9 @@ Then, follow the instruction of the dialog. (The uninstaller ask your administra
 
 If you don’t want to use above GUI, you can also uninstall Karabiner-Elements from command line.
 
-`
 bash'/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh'sudo'/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh'
-`
 
-`bash'/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh'sudo'/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh'`(Administrator password is required to run the above command.)
+` bash'/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/deactivate_driver.sh'sudo'/Library/Application Support/org.pqrs/Karabiner-Elements/uninstall.sh'`(Administrator password is required to run the above command.)
 
 ## Additional uninstallation
 
@@ -42,12 +40,12 @@ It does not affect the system even if it remains in place, but if you are concer
 - /var/log/karabiner
 - ~/.local/share/karabiner
 
-`/var/log/karabiner`~/.local/share/karabiner`- Delete the following directories:/Library/Application Support/org.pqrs/tmp
+`/var/log/karabiner `~/.local/share/karabiner `- Delete the following directories:/Library/Application Support/org.pqrs/tmp
 
 - /Library/Application Support/org.pqrs/tmp
 
-`/Library/Application Support/org.pqrs/tmp`- Delete the following directories:~/.config/karabiner
+`/Library/Application Support/org.pqrs/tmp `- Delete the following directories:~/.config/karabiner
 
 - ~/.config/karabiner
 
-`~/.config/karabiner`
+`~/.config/karabiner `

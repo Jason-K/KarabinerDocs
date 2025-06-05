@@ -43,7 +43,7 @@ The following Login Items in System Settings must be enabled.
 - Karabiner-Elements Non-Privileged Agents
 - Karabiner-Elements Privileged Daemons
 
-`Karabiner-Elements Non-Privileged Agents`Karabiner-Elements Privileged Daemons`
+` Karabiner-Elements Non-Privileged Agents ` Karabiner-Elements Privileged Daemons `
 #### Note
 
 ## Grant Input Monitoring to Karabiner-Elements processes
@@ -51,7 +51,7 @@ The following Login Items in System Settings must be enabled.
 1. The Keystroke Receiving alert will be shown.
 1. Press theOpen System Settingsbutton and enablekarabiner_grabber.
 
-`Open System Settings`karabiner_grabber`
+` Open System Settings ` karabiner_grabber `
 #### Note
 
 ## Allow system software which provides virtual devices for Karabiner-Elements
@@ -63,7 +63,7 @@ The following alert will be shown when you open Karabiner-Elements Settings.
 
 ClickOpen System Settingsbutton, then enable.Karabiner-VirtualHIDDevice-Manager.
 
-`Open System Settings`.Karabiner-VirtualHIDDevice-Manager`
+` Open System Settings `.Karabiner-VirtualHIDDevice-Manager `
 #### Note
 
 ## Configure Karabiner-Elements

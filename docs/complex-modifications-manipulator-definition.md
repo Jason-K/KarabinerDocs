@@ -2,7 +2,7 @@
 
 Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/
 
-`json
+` json
 "manipulators": [
     {
         "type": "basic",
@@ -21,7 +21,6 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
     },
     ...
 ]
-`
 
 | Name | Required | Description |
 | --- | --- | --- |

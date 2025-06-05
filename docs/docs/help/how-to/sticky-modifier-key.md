@@ -17,16 +17,16 @@ The sticky modifier keys acts as general modifier key while you are pressing and
 
 For example, the following operation result isAAinstead ofAa.
 
-`AA`Aa`1. Presssticky left shiftkey
+` AA ` Aa `1. Presssticky left shiftkey
 1. Pressakey
 1. Releaseakey
 1. Pressakey
 1. Releaseakey
 1. Releasesticky left shiftkey
 
-`sticky left shift`a`a`a`a`sticky left shift`If you want to disable this feature, usesticky modifier key (pressing and holding down is disabled).
+` sticky left shift ` a ` a ` a ` a ` sticky left shift ` If you want to disable this feature, usesticky modifier key (pressing and holding down is disabled).
 
-`sticky modifier key (pressing and holding down is disabled)`
+` sticky modifier key (pressing and holding down is disabled)`
 ## Sticky modifier key indicator
 
 Sticky modifier key indicator will be shown while the sticky modifiers are active.

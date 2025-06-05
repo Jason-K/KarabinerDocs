@@ -12,24 +12,25 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 
 simultaneousmanipulates keys which are pressed simultaneously in 50 milliseconds.
 
-`simultaneous`
+` simultaneous `
 ## Example
 
 This json defines manipulator which changesa+s+dtomission_control.
 
-`a+s+d`mission_control`
+` a+s+d ` mission_control `
+
+` json
 {"description":"Pressing the a,s,d keys simultaneously launches Mission Control","manipulators":[{"type":"basic","from":{"simultaneous":[{"key_code":"a"},{"key_code":"s"},{"key_code":"d"}],"modifiers":{"optional":["any"]}},"to":[{"apple_vendor_keyboard_key_code":"mission_control"}]}]}
-`
 
 `{"description":"Pressing the a,s,d keys simultaneously launches Mission Control","manipulators":[{"type":"basic","from":{"simultaneous":[{"key_code":"a"},{"key_code":"s"},{"key_code":"d"}],"modifiers":{"optional":["any"]}},"to":[{"apple_vendor_keyboard_key_code":"mission_control"}]}]}`
 #### Note
 
 There are some casessimultaneousdoes not modify events.
 
-`simultaneous`- simultaneousdoes not modify events if anyfromevents are released before allfromevents are pressed.
+` simultaneous `- simultaneousdoes not modify events if anyfromevents are released before allfromevents are pressed.
 - simultaneousdoes not modify events iffromevents are interrupted by another key_down event.
 
-`simultaneous`from`from`simultaneous`from`
+` simultaneous ` from ` from ` simultaneous ` from `
 ### Manipulated input #1
 
 - Input:akey_downskey_downdkey_down
@@ -39,9 +40,9 @@ There are some casessimultaneousdoes not modify events.
 1. skey_down
 1. dkey_down
 
-`a`s`d`1. mission_control
+` a ` s ` d `1. mission_control
 
-`mission_control`
+` mission_control `
 ### Manipulated input #2
 
 - Input:skey_downakey_downdkey_down
@@ -51,14 +52,14 @@ There are some casessimultaneousdoes not modify events.
 1. akey_down
 1. dkey_down
 
-`s`a`d`1. mission_control
+` s ` a ` d `1. mission_control
 
-`mission_control`
+` mission_control `
 ### Not manipulated input #1
 
 ais released before all input events are pressed.
 
-`a`- Input:akey_downskey_downakey_updkey_down
+` a `- Input:akey_downskey_downakey_updkey_down
 - Output:akey_downskey_downakey_updkey_down
 
 1. akey_down
@@ -66,17 +67,17 @@ ais released before all input events are pressed.
 1. akey_up
 1. dkey_down
 
-`a`s`a`d`1. akey_down
+` a ` s ` a ` d `1. akey_down
 1. skey_down
 1. akey_up
 1. dkey_down
 
-`a`s`a`d`
+` a ` s ` a ` d `
 ### Not manipulated input #2
 
 Another key (f) is pressed before all input events are pressed.
 
-`f`- Input:akey_downskey_downfkey_downdkey_down
+` f `- Input:akey_downskey_downfkey_downdkey_down
 - Output:akey_downskey_downfkey_downdkey_down
 
 1. akey_down
@@ -84,19 +85,19 @@ Another key (f) is pressed before all input events are pressed.
 1. fkey_down
 1. dkey_down
 
-`a`s`f`d`1. akey_down
+` a ` s ` f ` d `1. akey_down
 1. skey_down
 1. fkey_down
 1. dkey_down
 
-`a`s`f`d`
+` a ` s ` f ` d `
 ## About key_up
 
 The key_up event is posted when you release anyfromevents.
 
-`from`For example, changingtab+qtomission_controlworks as follows.
+` from ` For example, changingtab+qtomission_controlworks as follows.
 
-`tab+q`mission_control`
+` tab+q ` mission_control `
 
 | Input | Output |
 | tabkey_down | — |
@@ -104,11 +105,11 @@ The key_up event is posted when you release anyfromevents.
 | tabkey_up | mission_controlkey_up |
 | qkey_up | — |
 
-`tab`q`mission_control`tab`mission_control`q`
+` tab ` q ` mission_control ` tab ` mission_control ` q `
 ## Change threshold milliseconds
 
 You can adjust threshold on Karabiner-Elements Settings > Parameters.
 
 It is same as adjustingbasic.simultaneous_threshold_millisecondsparameter in json.
 
-`basic.simultaneous_threshold_milliseconds`
+` basic.simultaneous_threshold_milliseconds `

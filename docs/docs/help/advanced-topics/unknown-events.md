@@ -52,17 +52,13 @@ With this, you will now be able to modify the new keys in Karabiner-Elements.
 
 ### Build karabiner_grabber
 
-`
 cdsrc/core/grabbermake
-`
 
-`cdsrc/core/grabbermake`Then upgrade the installed file.
+` cdsrc/core/grabbermake ` Then upgrade the installed file.
 
-`
 make install
-`
 
-`make install`
+` make install `
 #### Note
 
 Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.
@@ -71,30 +67,22 @@ https://karabiner-elements.pqrs.org/docs/manual/misc/required-macos-settings/#en
 
 ### Build Settings
 
-`
 cdsrc/apps/SettingsWindowmake
-`
 
-`cdsrc/apps/SettingsWindowmake`Execute the updated Settings:
+` cdsrc/apps/SettingsWindowmake ` Execute the updated Settings:
 
-`
 make run
-`
 
-`make run`
+` make run `
 ### Build EventViewer
 
-`
 cdsrc/apps/EventViewermake
-`
 
-`cdsrc/apps/EventViewermake`Execute the updated EventViewer:
+` cdsrc/apps/EventViewermake ` Execute the updated EventViewer:
 
-`
 make run
-`
 
-`make run`
+` make run `
 #### Note
 
 Since the signature differs from the official release, you will need to delete and re-add the entry for Input Monitoring permissions.

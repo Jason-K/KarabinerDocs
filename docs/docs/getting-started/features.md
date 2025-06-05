@@ -40,4 +40,4 @@ Karabiner-Elements is a powerful and stable keyboard customizer for macOS.
 - Karabiner-Elements cannot modify the fn key on non-Apple keyboards such as Logitech keyboards.
 - Karabiner-Elements ignores theSystem Settings > Keyboard > Keyboard Shortcuts... > Modifier Keysconfiguration.Change modifiers by using Simple Modifications.(Detail of input event modification chaining)
 
-`System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys`
+` System Settings > Keyboard > Keyboard Shortcuts... > Modifier Keys `

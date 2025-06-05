@@ -11,7 +11,7 @@ Source: https://karabiner-elements.pqrs.org/docs/help/troubleshooting/fumihiko-t
 
 In Allow in the Background of Login Items,Fumihiko Takayamamay appear instead ofKarabiner-Elements.
 
-`Fumihiko Takayama`Karabiner-Elements`There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
+` Fumihiko Takayama ` Karabiner-Elements ` There are several causes, but the problem is mainly on the macOS side and is difficult to resolve. (Restarting macOS may solve this issue)
 
 In any case, there is no problem with leaving it as it is.
 
@@ -39,25 +39,19 @@ So purging unintended entries in Launch Services database solves this issue.
 
 Run the following command in Terminal to get the list of registered applications.
 
-`
 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -gc -dump|grep ^path|grep Karabiner-Elements
-`
 
-`/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -gc -dump|grep ^path|grep Karabiner-Elements`The result example:
+`/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -gc -dump|grep ^path|grep Karabiner-Elements ` The result example:
 
-`
 path:    /Users/tekezo/.Trash/Karabiner-Elements.app (0x6a38)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app (0x6bf8)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app (0x7918)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app (0x7930)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app (0x7938)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app (0x793c)path:    /Applications/Karabiner-Elements.app (0x7940)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-MultitouchExtension.app (0x7944)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-enyghegdpximkigqjnasmtnnkupb/Build/Products/Release/Karabiner-Elements.app (0x54c4)
-`
 
-`path:    /Users/tekezo/.Trash/Karabiner-Elements.app (0x6a38)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app (0x6bf8)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app (0x7918)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app (0x7930)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app (0x7938)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app (0x793c)path:    /Applications/Karabiner-Elements.app (0x7940)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-MultitouchExtension.app (0x7944)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-enyghegdpximkigqjnasmtnnkupb/Build/Products/Release/Karabiner-Elements.app (0x54c4)`Next, unregister the path to the built binaries, those containing Xcode, build, etc, from the list.
+` path:    /Users/tekezo/.Trash/Karabiner-Elements.app (0x6a38)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app (0x6bf8)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app (0x7918)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app (0x7930)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app (0x7938)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Elements.app (0x793c)path:    /Applications/Karabiner-Elements.app (0x7940)path:    /Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-MultitouchExtension.app (0x7944)path:    /Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-enyghegdpximkigqjnasmtnnkupb/Build/Products/Release/Karabiner-Elements.app (0x54c4)` Next, unregister the path to the built binaries, those containing Xcode, build, etc, from the list.
 
-`
 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u '/Users/tekezo/.Trash/Karabiner-Elements.app'
 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u '/Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app'
 ...
-`
 
 `/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u '/Users/tekezo/.Trash/Karabiner-Elements.app'
 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -u '/Users/tekezo/Library/Developer/Xcode/DerivedData/Karabiner-Elements-aljilynxkbdxwddtylopomxdislp/Build/Products/Debug/Karabiner-Elements.app'
-...`Finally, restart macOS.
+...` Finally, restart macOS.
 

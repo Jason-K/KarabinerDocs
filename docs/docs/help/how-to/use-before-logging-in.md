@@ -12,7 +12,7 @@ Source: https://karabiner-elements.pqrs.org/docs/help/how-to/use-before-logging-
 If you want to use Karabiner-Elements settings on the password entry screen before logging in, pressCopy the current configuration to the system default configurationbutton in the Misc tab of the settings screen.
 The configuration copied here will be applied even before logging in.
 
-`Copy the current configuration to the system default configuration`Additionally, this will become the default configuration for users who haven’t set up Karabiner-Elements, e.g., guest users.
+` Copy the current configuration to the system default configuration ` Additionally, this will become the default configuration for users who haven’t set up Karabiner-Elements, e.g., guest users.
 
 #### Caution
 

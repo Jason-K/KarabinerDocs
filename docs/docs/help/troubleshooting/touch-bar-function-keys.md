@@ -15,10 +15,10 @@ It’s an issue of macOS, and unfortunately, Karabiner-Elements cannot avoid thi
 1. EnableMap fn + number keys to their corresponding function keys.
 1. You can use f1-f12 keys by fn+number keys.
 
-`Map fn + number keys to their corresponding function keys`
+` Map fn + number keys to their corresponding function keys `
 #### Note
 
-`Map fn + number keys to their corresponding media control keys`
+` Map fn + number keys to their corresponding media control keys `
 #### Detail of the problem
 
 The fn key events are ignored by Touch Bar since the following facts.

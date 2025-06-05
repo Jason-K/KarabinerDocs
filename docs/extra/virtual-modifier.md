@@ -12,7 +12,7 @@ The following json changekeypad_1to virtual modifier.
 - Changekeypad_1 + atomission_control.
 - Changekeypad_1 + stolaunchpad.
 
-`json
+` json
 [
     {
         "type": "basic",
@@ -87,4 +87,3 @@ The following json changekeypad_1to virtual modifier.
         ]
     }
 ]
-`

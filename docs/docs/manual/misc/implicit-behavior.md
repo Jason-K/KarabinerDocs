@@ -34,13 +34,13 @@ The application launch keys is ignored when passed directly to macOS, so it will
 | consumer_key_code::al_internet_browser | Open Safari.app |
 | consumer_key_code::al_dictionary | Open Dictionary.app |
 
-`consumer_key_code::al_consumer_control_configuration`consumer_key_code::al_word_processor`consumer_key_code::al_text_editor`consumer_key_code::al_spreadsheet`consumer_key_code::al_presentation_app`consumer_key_code::al_email_reader`consumer_key_code::al_calculator`consumer_key_code::al_local_machine_browser`consumer_key_code::al_internet_browser`consumer_key_code::al_dictionary`The key event triggered by pressing Touch ID is ignored by macOS when passed through the Karabiner DriverKit VirtualHIDKeyboard. As a result, it is remapped to a Lock Key.
+` consumer_key_code::al_consumer_control_configuration ` consumer_key_code::al_word_processor ` consumer_key_code::al_text_editor ` consumer_key_code::al_spreadsheet ` consumer_key_code::al_presentation_app ` consumer_key_code::al_email_reader ` consumer_key_code::al_calculator ` consumer_key_code::al_local_machine_browser ` consumer_key_code::al_internet_browser ` consumer_key_code::al_dictionary ` The key event triggered by pressing Touch ID is ignored by macOS when passed through the Karabiner DriverKit VirtualHIDKeyboard. As a result, it is remapped to a Lock Key.
 
 
 | Target key | Special handling |
 | consumer_key_code::menu(Touch ID pressed event) | consumer_key_code::al_terminal_lock_or_screensaver(Lock key) |
 
-`consumer_key_code::menu`consumer_key_code::al_terminal_lock_or_screensaver`Touch ID’s fingerprint authentication is treated by macOS as a separate device from the keyboard.
+` consumer_key_code::menu ` consumer_key_code::al_terminal_lock_or_screensaver ` Touch ID’s fingerprint authentication is treated by macOS as a separate device from the keyboard.
 Therefore, Karabiner-Elements does not interact with fingerprint authentication at all.
 This ensures that fingerprint authentication operates independently of Karabiner-Elements.
 For instance, even if the built-in keyboard is disabled using Karabiner-Elements, fingerprint authentication will continue to work.

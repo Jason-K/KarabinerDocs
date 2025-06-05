@@ -12,24 +12,24 @@ Source: https://karabiner-elements.pqrs.org/docs/json/complex-modifications-mani
 
 set_variabledefines and updates the variable value.
 
-`set_variable`
+` set_variable `
 #### Tip
 
-`set_variable`variable_if`variable_unless`
+` set_variable ` variable_if ` variable_unless `
 ## Examples
 
 Pressing theakey while holding theescapekey launches Activity Monitor.
 
-`
+
+` json
 {"description":"Pressing the a key while holding the escape key launches Activity Monitor","manipulators":[{"type":"basic","from":{"key_code":"escape","modifiers":{"optional":["any"]}},"to":[{"set_variable":{"name":"escape_pressed","value":true,"key_up_value":false}}],"to_if_alone":[{"key_code":"escape"}]},{"type":"basic","from":{"key_code":"a","modifiers":{"optional":["any"]}},"to":[{"software_function":{"open_application":{"bundle_identifier":"com.apple.ActivityMonitor"}}}],"conditions":[{"type":"variable_if","name":"escape_pressed","value":true}]}]}
-`
 
 `{"description":"Pressing the a key while holding the escape key launches Activity Monitor","manipulators":[{"type":"basic","from":{"key_code":"escape","modifiers":{"optional":["any"]}},"to":[{"set_variable":{"name":"escape_pressed","value":true,"key_up_value":false}}],"to_if_alone":[{"key_code":"escape"}]},{"type":"basic","from":{"key_code":"a","modifiers":{"optional":["any"]}},"to":[{"software_function":{"open_application":{"bundle_identifier":"com.apple.ActivityMonitor"}}}],"conditions":[{"type":"variable_if","name":"escape_pressed","value":true}]}]}`
 ## Specification
 
-`
+
+` json
 {"to":[{"set_variable":{"name":"variable name","value":variablevalue,"key_up_value":variablevalue,"type":"set"}}]}
-`
 
 `{"to":[{"set_variable":{"name":"variable name","value":variablevalue,"key_up_value":variablevalue,"type":"set"}}]}`
 
@@ -39,12 +39,12 @@ Pressing theakey while holding theescapekey launches Activity Monitor.
 | key_up_value | Optional | A variable value when key is up | Karabiner-Elements 14.12.6 |
 | type | Optional | “set” or “unset” | Karabiner-Elements 14.99.2 |
 
-`name`value`key_up_value`type`Note: Ifkey_up_valueortypeis specified, thevaluecan be omitted.
+` name ` value ` key_up_value ` type ` Note: Ifkey_up_valueortypeis specified, thevaluecan be omitted.
 
-`key_up_value`type`value`
+` key_up_value ` type ` value `
 ## Available types ofvalue
 
-`value`
+` value `
 
 | Type | Example value | Available since |
 | integer | 0,1,2,… | Karabiner-Elements 11.0.0 |

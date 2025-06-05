@@ -15,4 +15,4 @@ Use System Settings > Keyboard.
 
 You can also adjust the key repeat rate usingdefaults writecommand.https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x
 
-`defaults write`
+` defaults write `
