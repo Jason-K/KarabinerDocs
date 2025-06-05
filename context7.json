@@ -8,6 +8,7 @@
   "excludeFolders": [],
   "excludeFiles": [],
   "rules": [
+    "See COMPREHENSIVE_REFERENCE.md and PROPERTY_REFERENCE.md for detailed documentation",
     "Karabiner-Elements uses JSON configuration files stored at ~/.config/karabiner/karabiner.json",
     "Complex modifications use manipulators with 'from' and 'to' event definitions",
     "The 'from' event defines what key or key combination triggers the modification",
