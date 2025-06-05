@@ -1,0 +1,19 @@
+# Python scripts used for scraping
+scrape_*.py
+improve_markdown.py
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
