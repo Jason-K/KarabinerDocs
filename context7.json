@@ -15,5 +15,27 @@
     "Conditions can be used to apply modifications only in specific contexts (apps, devices, etc.)",
     "Use 'to_if_alone' for dual-purpose keys (e.g., Caps Lock as Escape when tapped, Control when held)",
     "Variables can be set and used to maintain state between modifications"
+  ],
+  "previousVersions": [
+    {
+      "tag": "v15.3.0",
+      "title": "version 15.3.0 (Oct 28, 2024)"
+    },
+    {
+      "tag": "v15.2.0",
+      "title": "version 15.2.0 (Oct 7, 2024)"
+    },
+    {
+      "tag": "v15.1.0",
+      "title": "version 15.1.0 (Oct 6, 2024)"
+    },
+    {
+      "tag": "v15.0.0",
+      "title": "version 15.0.0 (Aug 8, 2024)"
+    },
+    {
+      "tag": "v14.13.0",
+      "title": "version 14.13.0"
+    }
   ]
 }
