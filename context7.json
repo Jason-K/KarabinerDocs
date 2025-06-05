@@ -1,0 +1,19 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Karabiner-Elements",
+  "description": "A powerful keyboard customizer for macOS that allows complex key remapping and modifications through JSON configuration",
+  "folders": [
+    "docs"
+  ],
+  "excludeFolders": [],
+  "excludeFiles": [],
+  "rules": [
+    "Karabiner-Elements uses JSON configuration files stored at ~/.config/karabiner/karabiner.json",
+    "Complex modifications use manipulators with 'from' and 'to' event definitions",
+    "The 'from' event defines what key or key combination triggers the modification",
+    "The 'to' event defines what action should be performed",
+    "Conditions can be used to apply modifications only in specific contexts (apps, devices, etc.)",
+    "Use 'to_if_alone' for dual-purpose keys (e.g., Caps Lock as Escape when tapped, Control when held)",
+    "Variables can be set and used to maintain state between modifications"
+  ]
+}
