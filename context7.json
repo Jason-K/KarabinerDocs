@@ -8,14 +8,21 @@
   "excludeFolders": [],
   "excludeFiles": [],
   "rules": [
-    "See COMPREHENSIVE_REFERENCE.md and PROPERTY_REFERENCE.md for detailed documentation",
     "Karabiner-Elements uses JSON configuration files stored at ~/.config/karabiner/karabiner.json",
     "Complex modifications use manipulators with 'from' and 'to' event definitions",
-    "The 'from' event defines what key or key combination triggers the modification",
-    "The 'to' event defines what action should be performed",
-    "Conditions can be used to apply modifications only in specific contexts (apps, devices, etc.)",
+    "The 'from' event defines what input to capture (key_code, consumer_key_code, pointing_button, or any)",
+    "The 'to' event defines what output to generate (can include key events, shell commands, mouse control, etc.)",
+    "Conditions control when manipulators activate (application, device, variable, input source based)",
     "Use 'to_if_alone' for dual-purpose keys (e.g., Caps Lock as Escape when tapped, Control when held)",
-    "Variables can be set and used to maintain state between modifications"
+    "Use 'to_if_held_down' for actions that trigger when a key is held",
+    "Use 'to_delayed_action' for time-based logic and multi-tap detection",
+    "Variables enable state management between key presses for complex multi-step shortcuts",
+    "Manipulators are evaluated top to bottom - first match wins",
+    "Use 'lazy': true when creating dual-purpose modifier keys to prevent immediate modifier sending",
+    "Parameters control timing: to_if_alone_timeout_milliseconds, to_if_held_down_threshold_milliseconds",
+    "Always escape dots in bundle identifiers for application conditions: com\\.apple\\.Terminal",
+    "The 'halt' property stops further event processing in specific contexts",
+    "Use EventViewer to find key codes, bundle identifiers, and debug configurations"
   ],
   "previousVersions": [
     {
